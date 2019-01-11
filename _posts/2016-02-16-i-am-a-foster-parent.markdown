@@ -1,7 +1,7 @@
 ---
-layout: post
 title: I Am A Foster Parent
 date: 2016-02-16 10:39:00 -06:00
+layout: post
 ---
 
 About two years ago my wife and I decided to officially commit to the process of becoming licensed foster parents. That wasn't the first time we considered it. Prior to our second child being born we began the process but were pleasantly surprised by the news that we were expecting, so we put fostering on hold. Two years ago he was 3 and we felt led to begin the discussion again.

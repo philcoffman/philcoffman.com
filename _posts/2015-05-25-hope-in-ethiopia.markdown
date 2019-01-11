@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Hope In Ethiopia
 date: 2015-05-25 10:38:00 -05:00
+layout: post
 ---
 
 I have been aware of [Hope in Ethiopia](http://hopeinethiopia.org/) for several years since most of the people involved go to my local church. I'll admit that I casually listened to the reports from the team but never took action to get involved myself. As I mentioned in [my previous post](http://blog.philcoffman.com/here-i-am-lord-send-me/) it wasn't until we opened the door to fostering that I felt led to take a closer look. Hope in Ethiopia was born when the orphan and adoption ministry of my local church, [Grace Covenant Church](http://grace360.org/), became aware of a community of orphan-led households in Zeway, Ethiopia and surrounding towns. This was brought to their attention through a relationship they had with [Food for the Hungry](http://fh.org/) who were already present in Ethiopia, working to end poverty. These orphans were thrown into caring for each other after the death of their parents. To survive they would find whatever ways they could to make money to buy food, which in turn robbed them of the chance to go to school and gain an education. Many of these children had no other people in their lives to rely on for support. Without intervention these kids essentially have little hope for a future.

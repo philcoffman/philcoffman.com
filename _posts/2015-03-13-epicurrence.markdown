@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Epicurrence
 date: 2015-03-13 10:35:00 -05:00
+layout: post
 ---
 
 Something special happened in South Lake Tahoe this week. I boarded the plane bound for the west coast and [Epicurrence](http://epicurrence.com/) early Sunday morning with anticipation and few expectations. I wasn't sure what I was in for over the next few days. I had hopes for new experiences (I hadn't skied since I was a kid, more to come on this), opportunities to meet some of my design heroes, and a desire to leave inspired to further my creative passions. Epicurrence fulfilled and exceeded those hopes.

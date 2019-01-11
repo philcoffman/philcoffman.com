@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Post Surgery
 date: 2016-05-17 10:41:00 -05:00
+layout: post
 ---
 
 Yesterday's surgery is over. It all went well and my recovery so far has been fine. The doctor says he is very pleased with the procedure and thinks I'll heal up well. I struggled with some initial nausea due to the anesthesia but that seems to be behind me now. Pain is manageable. Most annoying part is having to breathe through my mouth.
