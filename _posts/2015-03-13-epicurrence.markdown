@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Epicurrence
 date: 2015-03-13 10:35:00 -05:00
 ---

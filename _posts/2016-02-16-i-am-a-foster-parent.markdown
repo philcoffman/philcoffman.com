@@ -1,4 +1,5 @@
 ---
+layout: post
 title: I Am A Foster Parent
 date: 2016-02-16 10:39:00 -06:00
 ---
