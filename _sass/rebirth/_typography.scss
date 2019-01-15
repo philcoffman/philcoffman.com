@@ -1,6 +1,6 @@
 // Typography
 @include font-face(Silka, '/assets/fonts/silka-bold-webfont', bold);
-@include font-face(Silka, '/assets/fonts/silka-regular-webfont', regular);
+@include font-face(Silka, '/assets/fonts/silka-medium-webfont', medium);
 @include font-face(Kelson, '/assets/fonts/Kelson-Bold', bold);
 @include font-face(Kelson, '/assets/fonts/Kelson-Medium', medium);
 
@@ -41,7 +41,9 @@ body {
 
 p {
   font-family: $root-font-family;
-  margin: 0 0 1.5rem;
+  font-weight: 500;
+  font-size: .9rem;
+  margin: 0 0 2.5rem;
   hyphens: auto;
   strong {
     font-style: bold;

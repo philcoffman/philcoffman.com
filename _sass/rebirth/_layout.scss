@@ -1,5 +1,7 @@
 html {
   padding: $space-2;
+  box-sizing: border-box;
+  background-color: #F3F1EB;
 }
 body {
   .pageContent {
@@ -9,9 +11,87 @@ body {
 }
 
 .siteHeader {
-  .phlcfmn {
-    svg {
+  margin-bottom: 2rem;
+  .siteHeader__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "logo byline"
+    "nav nav"
+    ;
+    align-items: center;
+    .phlcfmn {
+      grid-area: logo;
       width: 47px;
+      height: 30px;
+      svg {
+        width: 47px;
+      }
     }
+    .byline {
+      grid-area: byline;
+      font-size: .5rem;
+      text-align: right;
+      margin: 0;
+      strong {
+        font-weight: 700;
+        text-transform: uppercase;
+        display: block;
+      }
+    }
+    .siteNav {
+      grid-area: nav;
+      display: flex;
+      justify-content: space-between;
+      a {
+        font-size: .75rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: $neutral--darker;
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
+.post {
+  .postHeader {
+    margin-bottom: 3rem;
+    .postMeta {
+      display: inline-block;
+      margin: 0 0 2rem;
+      background-color: #FDC43F;
+      border: 2px solid $neutral--darker;
+      font-size: .7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      box-shadow: 3px 3px 0px $neutral--darker;
+      span {
+        display: inline-block;
+        padding: 4px 7px;
+        border-right: 2px solid $neutral--darker;
+        min-width: 11px;
+        text-align: center;
+      }
+      time {
+        display: inline-block;
+        padding: 4px 9px 4px 7px;
+      }
+    }
+    .postTitle {
+      font-family: $headline-font-family;
+      text-transform: uppercase;
+      font-size: 2.25rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 2rem;
+    }
+  }
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.375;
+    margin-bottom: .5rem;
   }
 }

@@ -11,8 +11,8 @@ collections:
 email: pc@philcoffman.com
 description: Phil Coffman is a digital designer and lives in Austin, TX with his family.
   He is currently the Design Lead at PCPartPicker.
-baseurl: 
-url: 
+baseurl:
+url:
 twitter_username: philcoffman
 github_username: philcoffman
 markdown: kramdown
