@@ -1,0 +1,49 @@
+// Typography
+@include font-face(Silka, '/assets/fonts/silka-bold-webfont', bold);
+@include font-face(Silka, '/assets/fonts/silka-regular-webfont', regular);
+@include font-face(Kelson, '/assets/fonts/Kelson-Bold', bold);
+@include font-face(Kelson, '/assets/fonts/Kelson-Medium', medium);
+
+:root {
+  // font-size: 1.25rem;
+  font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
+  text-rendering: optimizeLegibility;
+}
+
+@supports (font-kerning: normal) and (font-variant-ligatures: common-ligatures contextual) and (font-variant-numeric: oldstyle-nums proportional-nums) {
+  :root {
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures contextual;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    font-feature-settings: normal;
+  }
+}
+
+.numbers {
+  letter-spacing: 0.01em;
+}
+
+abbr {
+  font-feature-settings: "kern", "liga", "clig", "calt", "c2sc", "smcp";
+}
+
+@supports (font-variant-caps: all-small-caps) {
+  abbr {
+    font-variant-caps: all-small-caps;
+    font-feature-settings: normal;
+  }
+}
+
+body {
+  font-family: $root-font-family;
+  line-height: 1.5;
+}
+
+p {
+  font-family: $root-font-family;
+  margin: 0 0 1.5rem;
+  hyphens: auto;
+  strong {
+    font-style: bold;
+  }
+}

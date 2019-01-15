@@ -1,0 +1,56 @@
+// Generate Breakpoint Prefixes
+// -------------------------
+// this mixin adds breakpoint prefixes
+// from the list of breakpoints to the
+// beginning of a block of css selectors
+
+// all of the breakpoint names and values
+// we may use this a lot, keep them somewhere safe
+$breakpoints: (
+ xs: null,
+ sm: $breakpoint-sm,
+ md: $breakpoint-md,
+ lg: $breakpoint-lg,
+ xl: $breakpoint-xl,
+);
+
+// returns the apropriate media query
+// for the given breakpoint name
+@mixin media-query($breakpoint) {
+  @if (map-get($breakpoints, $breakpoint)) == null {
+    @content;
+  } @else {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+}
+
+// nest content inside breakpoint prefix classes
+// in the apropriate media query block
+@mixin generate-breakpoint-prefixes {
+  @each $breakpoint-name, $breakpoint-value in $breakpoints {
+    $breakpoint-prefix: "#{$breakpoint-name}-";
+
+    @include media-query($breakpoint-name) {
+
+      // Columns
+      .#{$breakpoint-prefix} {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal ) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    src: url('#{$file-path}.eot');
+    src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+      url('#{$file-path}.woff2') format('woff2'),
+      url('#{$file-path}.woff') format('woff'),
+      url('#{$file-path}.svg#youworkforthem') format('svg');
+  }
+}

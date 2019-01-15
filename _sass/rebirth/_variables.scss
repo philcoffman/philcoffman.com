@@ -1,0 +1,58 @@
+// Colors
+//
+// Neutrals
+$neutral--darker: #1E1D2E;
+$neutral--dark: #3A3F4D;
+$neutral: #788192;
+$neutral--light: #EBEAEA;
+$neutral--lighter: #FFFFFF;
+
+$body-color: $neutral--darker;
+$body-bg: $neutral--dark;
+$link-color: blue;
+$code-color: #bf616a;
+
+
+// Type
+//
+// Root type
+$root-font-size: 16px;
+$root-line-height: 1.5;
+
+// Families
+$root-font-family: "Silka", helvetica, arial, sans-serif;
+$headline-font-family: "Kelson", $root-font-family;
+
+$bold: bold;
+
+// Dimensions
+//
+// Breakpoints
+$breakpoint-sm: 500px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1420px;
+$breakpoint-xl: 2200px;
+
+// Max Site Width
+$site-max-width: 45rem;
+
+// Spacing
+$space-0:     0;
+$space-half:  .5rem;
+$space-1:     1rem;
+$space-2:     1.5rem;
+$space-3:     2rem;
+$space-4:     2.5rem;
+$space-5:     3rem;
+$space-6:     3.5rem;
+$space-7:     4rem;
+$space-8:     4.5rem;
+$space-9:     5rem;
+
+
+// Animations
+//
+// Easing
+$ease--normal: .35s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$ease--fast: .1s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$ease--slow: .8s cubic-bezier(0.165, 0.840, 0.440, 1.000);
