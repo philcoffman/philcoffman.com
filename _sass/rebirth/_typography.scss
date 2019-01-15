@@ -42,10 +42,8 @@ body {
 p {
   font-family: $root-font-family;
   font-weight: 500;
-  font-size: .9rem;
-  margin: 0 0 2.5rem;
-  hyphens: auto;
+  // hyphens: auto;
   strong {
-    font-style: bold;
+    font-weight: 700;
   }
 }

@@ -1,7 +1,7 @@
 html {
-  padding: $space-2;
   box-sizing: border-box;
-  background-color: #F3F1EB;
+  background: #F3F1EB url("/assets/img/dust-dark.png") repeat;
+  background-size: 238px 238px;
 }
 body {
   .pageContent {
@@ -11,8 +11,20 @@ body {
 }
 
 .siteHeader {
-  margin-bottom: 2rem;
+  margin-bottom: $space-4;
+  padding: 0 $space-1;
+  &:after {
+    display: block;
+    content: "";
+    height: 9px;
+    width: 100%;
+    margin-top: 2px;
+    background: transparent url('/assets/img/dot-grid.png') repeat;
+    background-size: 3px 3px;
+  }
   .siteHeader__wrapper {
+    padding: $space-1 0 0 0;
+    border-bottom: 2px solid $neutral--darker;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -20,6 +32,14 @@ body {
     "logo byline"
     "nav nav"
     ;
+    @media only screen and (min-width: $breakpoint-sm) {
+      padding: $space-1 0;
+      grid-template-columns: auto 1fr auto;
+      grid-template-rows: none;
+      grid-template-areas:
+      "logo nav byline"
+      ;
+    }
     align-items: center;
     .phlcfmn {
       grid-area: logo;
@@ -33,7 +53,6 @@ body {
       grid-area: byline;
       font-size: .5rem;
       text-align: right;
-      margin: 0;
       strong {
         font-weight: 700;
         text-transform: uppercase;
@@ -44,12 +63,19 @@ body {
       grid-area: nav;
       display: flex;
       justify-content: space-between;
+      @media only screen and (min-width: $breakpoint-sm) {
+        justify-content: flex-start;
+        margin-left: $space-2;
+      }
       a {
         font-size: .75rem;
         font-weight: 700;
         text-decoration: none;
         color: $neutral--darker;
-        margin: 1rem 0;
+        padding: $space-1 0;
+        @media only screen and (min-width: $breakpoint-sm) {
+          padding: $space-1;
+        }
       }
     }
   }
@@ -58,6 +84,7 @@ body {
 .post {
   .postHeader {
     margin-bottom: 3rem;
+    padding: 0 $space-1;
     .postMeta {
       display: inline-block;
       margin: 0 0 2rem;
@@ -82,16 +109,76 @@ body {
     .postTitle {
       font-family: $headline-font-family;
       text-transform: uppercase;
-      font-size: 2.25rem;
+      font-size: 2.5rem;
+      @media only screen and (min-width: $breakpoint-md) {
+        font-size: 4rem;
+      }
       font-weight: 700;
       line-height: 1;
       margin-bottom: 2rem;
     }
+    .postCategory {
+      font-size: .8rem;
+      line-height: 1.25;
+      &:before {
+        display: block;
+        content: "";
+        height: 2px;
+        width: 12px;
+        background-color: $neutral--darker;
+        margin-bottom: 6px;
+      }
+      strong {
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .postContent {
+    > * {
+      padding: 0 $space-1;
+    }
+    p {
+      font-size: 1rem;
+      margin: 0 0 2.5rem;
+      @media only screen and (min-width: $breakpoint-md) {
+        font-size: 1.25rem;
+        margin: 0 0 3.5rem;
+      }
+
+    }
   }
   h2 {
     font-size: 1.1rem;
+    @media only screen and (min-width: $breakpoint-md) {
+      font-size: 1.625rem;
+    }
     font-weight: 700;
     line-height: 1.375;
     margin-bottom: .5rem;
+  }
+}
+
+.siteFooter {
+  padding: 0 $space-1;
+  .siteFooter__wrapper {
+    border-top: 2px solid $neutral--darker;
+    &:before {
+      display: block;
+      content: "";
+      height: 9px;
+      width: 100%;
+      margin-top: 2px;
+      background: transparent url('/assets/img/dot-grid.png') repeat;
+      background-size: 3px 3px;
+    }
+    .footnote {
+      font-size: .5rem;
+      margin: $space-2 0 $space-3;
+      strong {
+        display: block;
+        text-transform: uppercase;
+      }
+    }
   }
 }
