@@ -1,8 +1,8 @@
 ---
 title: Answering My Fostering Questions
 date: 2016-02-26 10:40:00 -06:00
-categories:
-- Stuff That Matters Most
+tags:
+- Stuff that Matters Most
 layout: post
 ---
 
