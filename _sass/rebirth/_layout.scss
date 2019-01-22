@@ -118,8 +118,11 @@ body {
       font-family: $headline-font-family;
       text-transform: uppercase;
       font-size: 2.5rem;
+      @media (min-width: $breakpoint-sm) {
+        font-size: 3.5rem;
+      }
       @media (min-width: $breakpoint-md) {
-        font-size: 4rem;
+        font-size: 4.5rem;
       }
       font-weight: 700;
       line-height: 1;
