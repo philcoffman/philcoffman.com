@@ -1,6 +1,8 @@
 ---
 title: Hope In Ethiopia
 date: 2015-05-25 10:38:00 -05:00
+tags:
+- Life Experiences
 layout: post
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: It's Not Enough
 date: 2014-01-25 09:53:00 -06:00
+tags:
+- Inspiration
 layout: post
 ---
 

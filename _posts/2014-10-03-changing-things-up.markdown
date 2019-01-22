@@ -1,6 +1,8 @@
 ---
 title: Changing Things Up
 date: 2014-10-03 10:34:00 -05:00
+tags:
+- Life Experiences
 layout: post
 ---
 

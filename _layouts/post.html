@@ -15,10 +15,11 @@ layout: default
     <h1 class="postTitle p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="postCategory">Posted in <strong>{{ page.tags }}</strong></p>
   </header>
+  {{ content }}
 
-  <div class="postContent" itemprop="articleBody">
+  <!-- <div class="postContent" itemprop="articleBody">
     {{ content }}
-  </div>
+  </div> -->
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

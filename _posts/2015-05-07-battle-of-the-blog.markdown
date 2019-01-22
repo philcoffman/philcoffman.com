@@ -1,6 +1,8 @@
 ---
 title: Battle of the Blog
 date: 2015-05-07 10:36:00 -05:00
+tags:
+- Not Sure Yet
 layout: post
 ---
 

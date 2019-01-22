@@ -5,8 +5,8 @@ html {
 }
 body {
   .pageContent {
-    max-width: $site-max-width;
-    margin: 0 auto;
+    // max-width: $site-max-width;
+    // margin: 0 auto;
   }
 }
 
@@ -32,7 +32,7 @@ body {
     "logo byline"
     "nav nav"
     ;
-    @media only screen and (min-width: $breakpoint-sm) {
+    @media (min-width: $breakpoint-sm) {
       padding: $space-1 0;
       grid-template-columns: auto 1fr auto;
       grid-template-rows: none;
@@ -63,7 +63,7 @@ body {
       grid-area: nav;
       display: flex;
       justify-content: space-between;
-      @media only screen and (min-width: $breakpoint-sm) {
+      @media (min-width: $breakpoint-sm) {
         justify-content: flex-start;
         margin-left: $space-2;
       }
@@ -73,7 +73,7 @@ body {
         text-decoration: none;
         color: $neutral--darker;
         padding: $space-1 0;
-        @media only screen and (min-width: $breakpoint-sm) {
+        @media (min-width: $breakpoint-sm) {
           padding: $space-1;
         }
       }
@@ -82,9 +82,17 @@ body {
 }
 
 .post {
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) 5rem repeat(3, minmax(0, 15rem)) 5rem minmax(1rem, 1fr);
+  grid-template-rows: auto;
+  > * {
+    grid-column: 2 / 7;
+    @media (min-width: $breakpoint-sm) {
+      grid-column: 3 / 6;
+    }
+  }
   .postHeader {
     margin-bottom: 3rem;
-    padding: 0 $space-1;
     .postMeta {
       display: inline-block;
       margin: 0 0 2rem;
@@ -110,7 +118,7 @@ body {
       font-family: $headline-font-family;
       text-transform: uppercase;
       font-size: 2.5rem;
-      @media only screen and (min-width: $breakpoint-md) {
+      @media (min-width: $breakpoint-md) {
         font-size: 4rem;
       }
       font-weight: 700;
@@ -134,23 +142,35 @@ body {
       }
     }
   }
-  .postContent {
-    > * {
-      padding: 0 $space-1;
+  p {
+    font-size: 1rem;
+    margin: 0 0 2.5rem;
+    @media (min-width: $breakpoint-md) {
+      font-size: 1.25rem;
+      margin: 0 0 3.5rem;
     }
-    p {
-      font-size: 1rem;
-      margin: 0 0 2.5rem;
-      @media only screen and (min-width: $breakpoint-md) {
-        font-size: 1.25rem;
-        margin: 0 0 3.5rem;
-      }
-
+  }
+  .full {
+    grid-column: 2 / 7;
+    width: 100%;
+    padding: 0;
+  }
+  .video__wrapper {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    iframe {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
     }
   }
   h2 {
     font-size: 1.1rem;
-    @media only screen and (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-md) {
       font-size: 1.625rem;
     }
     font-weight: 700;
