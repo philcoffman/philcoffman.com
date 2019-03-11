@@ -1,38 +1,34 @@
 // Typography
-@include font-face(Silka, '/assets/fonts/silka-bold-webfont', bold);
-@include font-face(Silka, '/assets/fonts/silka-medium-webfont', medium);
-@include font-face(Kelson, '/assets/fonts/Kelson-Bold', bold);
-@include font-face(Kelson, '/assets/fonts/Kelson-Medium', medium);
+
 
 :root {
   // font-size: 1.25rem;
-  font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum";
   text-rendering: optimizeLegibility;
 }
 
-@supports (font-kerning: normal) and (font-variant-ligatures: common-ligatures contextual) and (font-variant-numeric: oldstyle-nums proportional-nums) {
-  :root {
-    font-kerning: normal;
-    font-variant-ligatures: common-ligatures contextual;
-    font-variant-numeric: oldstyle-nums proportional-nums;
-    font-feature-settings: normal;
-  }
-}
+// @supports (font-kerning: normal) and (font-variant-ligatures: common-ligatures contextual) and (font-variant-numeric: oldstyle-nums proportional-nums) {
+//   :root {
+//     font-kerning: normal;
+//     font-variant-ligatures: common-ligatures contextual;
+//     font-variant-numeric: oldstyle-nums proportional-nums;
+//     font-feature-settings: normal;
+//   }
+// }
 
-.numbers {
-  letter-spacing: 0.01em;
-}
-
-abbr {
-  font-feature-settings: "kern", "liga", "clig", "calt", "c2sc", "smcp";
-}
-
-@supports (font-variant-caps: all-small-caps) {
-  abbr {
-    font-variant-caps: all-small-caps;
-    font-feature-settings: normal;
-  }
-}
+// .numbers {
+//   letter-spacing: 0.01em;
+// }
+//
+// abbr {
+//   font-feature-settings: "kern", "liga", "clig", "calt", "c2sc", "smcp";
+// }
+//
+// @supports (font-variant-caps: all-small-caps) {
+//   abbr {
+//     font-variant-caps: all-small-caps;
+//     font-feature-settings: normal;
+//   }
+// }
 
 body {
   font-family: $root-font-family;
@@ -41,9 +37,27 @@ body {
 
 p {
   font-family: $root-font-family;
+  font-variant-numeric: lining-nums;
+  -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
   font-weight: 500;
+  font-size: 1rem;
+  margin: 0 0 1rem;
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.25rem;
+    margin: 0 0 1rem;
+  }
   // hyphens: auto;
   strong {
     font-weight: 700;
+  }
+}
+blockquote {
+  transform: rotate(-1deg);
+  p {
+    font-family: $hand;
+    font-size: 2rem;
+    color: $ink;
   }
 }

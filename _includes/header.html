@@ -1,20 +1,12 @@
 <header class="siteHeader" role="banner">
-
-  <div class="siteHeader__wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <!-- <a class="phlcfmn" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -->
-    <a class="phlcfmn" rel="author" href="{{ "/" | relative_url }}"><svg id="d08c6ddf-3a91-4630-bad3-eb6f921c046a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 38.94"><title>Untitled-1</title><polygon points="26.69 7.09 20.63 7.09 20.63 0 16.82 0 16.82 17.86 20.63 17.86 20.63 10.72 26.69 10.72 26.69 17.86 30.5 17.86 30.5 0 26.69 0 26.69 7.09"/><polygon points="60.19 21.08 60.19 28.13 53.48 20.99 50.37 20.99 50.37 38.85 54.18 38.85 54.18 27.18 60.19 33.52 60.19 38.94 64 38.94 64 21.08 60.19 21.08"/><polygon points="16.82 38.85 20.57 38.85 20.57 31.73 27.86 31.73 27.86 28.13 20.57 28.13 20.57 24.53 30.5 24.53 30.5 20.99 16.82 20.99 16.82 38.85"/><polygon points="37.43 0 33.55 0 33.55 17.86 47.25 17.86 47.25 14.31 37.43 14.31 37.43 0"/><path d="M44.28,21.15c-1.44,1.82-3.11,4-3.83,5L36.4,21H33.56V38.85h3.56V27.44l2.25,2.83h2.06l2.25-2.83V38.85h3.57V21H44.41Z"/><path d="M9.17,21H4.59A4.34,4.34,0,0,0,0,25.37v9.1a4.34,4.34,0,0,0,4.59,4.38H9.11a4.34,4.34,0,0,0,4.58-4.38V32.86H9.88v1.73a.69.69,0,0,1-.62.68H4.44a.68.68,0,0,1-.62-.68V25.28a.68.68,0,0,1,.62-.68H9.26a.69.69,0,0,1,.62.68V27h3.81V25.54A4.43,4.43,0,0,0,9.17,21Z"/><path d="M9.11,0H0V17.86H3.76V11.57H9.11a4.4,4.4,0,0,0,4.58-4.41V4.38A4.34,4.34,0,0,0,9.11,0Zm.83,7.37A.68.68,0,0,1,9.32,8H3.76V3.49H9.32a.69.69,0,0,1,.62.68Z"/></svg></a>
-    <p class="byline"><strong>Digital Designer & Human</strong>Based in Austin, TX</p>
-    {%- if page_paths -%}
-    <nav class="siteNav">
-        {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title -%}
-          <a class="page-link" href="{{ my_page.url | relative_url }}">/{{ my_page.title | escape }}</a>
-          {%- endif -%}
-        {%- endfor -%}
-    </nav>
-    {%- endif -%}
-  </div>
+  <nav>
+    <ul>
+      <li class="logo">
+        <a rel="author" href="{{ "/" | relative_url }}"><svg id="d08c6ddf-3a91-4630-bad3-eb6f921c046a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 38.94"><title>Untitled-1</title><polygon points="26.69 7.09 20.63 7.09 20.63 0 16.82 0 16.82 17.86 20.63 17.86 20.63 10.72 26.69 10.72 26.69 17.86 30.5 17.86 30.5 0 26.69 0 26.69 7.09"/><polygon points="60.19 21.08 60.19 28.13 53.48 20.99 50.37 20.99 50.37 38.85 54.18 38.85 54.18 27.18 60.19 33.52 60.19 38.94 64 38.94 64 21.08 60.19 21.08"/><polygon points="16.82 38.85 20.57 38.85 20.57 31.73 27.86 31.73 27.86 28.13 20.57 28.13 20.57 24.53 30.5 24.53 30.5 20.99 16.82 20.99 16.82 38.85"/><polygon points="37.43 0 33.55 0 33.55 17.86 47.25 17.86 47.25 14.31 37.43 14.31 37.43 0"/><path d="M44.28,21.15c-1.44,1.82-3.11,4-3.83,5L36.4,21H33.56V38.85h3.56V27.44l2.25,2.83h2.06l2.25-2.83V38.85h3.57V21H44.41Z"/><path d="M9.17,21H4.59A4.34,4.34,0,0,0,0,25.37v9.1a4.34,4.34,0,0,0,4.59,4.38H9.11a4.34,4.34,0,0,0,4.58-4.38V32.86H9.88v1.73a.69.69,0,0,1-.62.68H4.44a.68.68,0,0,1-.62-.68V25.28a.68.68,0,0,1,.62-.68H9.26a.69.69,0,0,1,.62.68V27h3.81V25.54A4.43,4.43,0,0,0,9.17,21Z"/><path d="M9.11,0H0V17.86H3.76V11.57H9.11a4.4,4.4,0,0,0,4.58-4.41V4.38A4.34,4.34,0,0,0,9.11,0Zm.83,7.37A.68.68,0,0,1,9.32,8H3.76V3.49H9.32a.69.69,0,0,1,.62.68Z"/></svg></a>
+      </li>
+    </ul>
+    <ul>
+      <li><a href="{{ "/" | relative_url }}">Blog</a></li><li><a href="/work">Work</a></li><li><a href="/about">About</a></li>
+    </ul>
+  </nav>
 </header>

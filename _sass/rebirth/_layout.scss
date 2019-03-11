@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background: #F3F1EB url("/assets/img/dust-dark.png") repeat;
+  background: #f0eee9 url("/assets/img/dust-dark.png") repeat;
   background-size: 238px 238px;
 }
 body {
@@ -10,89 +10,102 @@ body {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
+.grid--reg {
+  grid-column: 2 / 12;
+}
+
+.grid--full {
+  grid-column: 1 / 13;
+}
+
+.grid--hl {
+  grid-column: 2 / 7;
+}
+
+.grid--hr {
+  grid-column: 7 / 12;
+}
+
 .siteHeader {
-  margin-bottom: $space-4;
-  padding: 0 $space-1;
-  &:after {
-    display: block;
-    content: "";
-    height: 9px;
-    width: 100%;
-    margin-top: 2px;
-    background: transparent url('/assets/img/dot-grid.png') repeat;
-    background-size: 3px 3px;
-  }
-  .siteHeader__wrapper {
-    padding: $space-1 0 0 0;
-    border-bottom: 2px solid $neutral--darker;
+  background: transparent url("../assets/img/pencil-swath.png") no-repeat;
+  // background-size: cover;
+  background-size: 100% 100%;
+  // background-position: 0 -50px;
+  nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-    "logo byline"
-    "nav nav"
-    ;
-    @media (min-width: $breakpoint-sm) {
-      padding: $space-1 0;
-      grid-template-columns: auto 1fr auto;
-      grid-template-rows: none;
-      grid-template-areas:
-      "logo nav byline"
-      ;
-    }
+    padding: $space-4 $space-7;
+    font-family: $sans;
+    font-size: .875rem;
     align-items: center;
-    .phlcfmn {
-      grid-area: logo;
-      width: 47px;
-      height: 30px;
-      svg {
-        width: 47px;
+    ul {
+      li {
+        display: inline-block;
+      }
+      &:last-of-type {
+        text-align: right;
+        li {
+          a {
+            color: $neutral--darker;
+            padding: $space-1 $space-2;
+            text-decoration: none;
+          }
+        }
       }
     }
-    .byline {
-      grid-area: byline;
-      font-size: .5rem;
-      text-align: right;
-      strong {
-        font-weight: 700;
-        text-transform: uppercase;
-        display: block;
-      }
-    }
-    .siteNav {
-      grid-area: nav;
-      display: flex;
-      justify-content: space-between;
-      @media (min-width: $breakpoint-sm) {
-        justify-content: flex-start;
-        margin-left: $space-2;
-      }
+    .logo {
       a {
-        font-size: .75rem;
-        font-weight: 700;
-        text-decoration: none;
-        color: $neutral--darker;
-        padding: $space-1 0;
-        @media (min-width: $breakpoint-sm) {
-          padding: $space-1;
+        svg {
+          width: 47px;
         }
       }
     }
   }
 }
 
+
+
 .post {
   display: grid;
-  grid-template-columns: minmax(1rem, 1fr) 5rem repeat(3, minmax(0, 15rem)) 5rem minmax(1rem, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: 1fr repeat(10, minmax(0, 6rem)) 1fr;
+  grid-gap: $space-1;
+  margin: $space-4 0 8rem;
   > * {
-    grid-column: 2 / 7;
+    grid-column: 2 / 12;
     @media (min-width: $breakpoint-sm) {
-      grid-column: 3 / 6;
+      grid-column: 4 / 10;
+    }
+  }
+  .postTitle {
+    text-align: center;
+    a {
+      font-family: $headline-font-family;
+      font-size: 4rem;
+      line-height: 1.125;
+      color: $neutral--darker;
+      letter-spacing: -1.5px;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      .postIndex {
+        font-family: $hand;
+        font-size: 2.125rem;
+        color: $ink;
+        position: relative;
+        display: inline-block;
+        top: -$space-7;
+        left: $space-1;
+        margin: 0;
+        transform: rotate(-9deg);
+      }
     }
   }
   .postHeader {
-    margin-bottom: 3rem;
+    text-align: center;
     .postMeta {
       display: inline-block;
       margin: 0 0 2rem;
@@ -136,6 +149,7 @@ body {
         content: "";
         height: 2px;
         width: 12px;
+        margin: 0 auto;
         background-color: $neutral--darker;
         margin-bottom: 6px;
       }
@@ -146,15 +160,10 @@ body {
     }
   }
   p {
-    font-size: 1rem;
-    margin: 0 0 2.5rem;
-    @media (min-width: $breakpoint-md) {
-      font-size: 1.25rem;
-      margin: 0 0 3.5rem;
-    }
+
   }
   .full {
-    grid-column: 2 / 7;
+    grid-column: 3 / 11;
     width: 100%;
     padding: 0;
   }
