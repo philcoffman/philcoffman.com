@@ -57,6 +57,7 @@ blockquote {
   transform: rotate(-1deg);
   p {
     font-family: $hand;
+    font-weight: bold;
     font-size: 1.375rem;
     @media (min-width: $breakpoint-md) {
       font-size: 2rem;
@@ -72,6 +73,7 @@ footer {
     display: inline-block;
     transform: rotate(-2deg);
     font-family: $hand;
+    font-weight: bold;
     color: $ink;
   }
 }

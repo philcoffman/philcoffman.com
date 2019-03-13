@@ -4,6 +4,7 @@ html {
   background-size: 238px 238px;
 }
 body {
+  -webkit-font-smoothing: antialiased;
   .pageContent {
     // max-width: $site-max-width;
     // margin: 0 auto;
@@ -112,6 +113,7 @@ img {
       margin-bottom: $space-3;
       .postIndex {
         font-family: $hand;
+        font-weight: bold;
         font-size: 1.5rem;
         color: $ink;
         padding-left: $space-1;
@@ -122,6 +124,7 @@ img {
       .postDate {
         width: auto;
         font-family: $hand;
+        font-weight: bold;
         font-size: 1.5rem;
         color: $ink;
         padding-left: $space-2;
