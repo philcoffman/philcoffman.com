@@ -59,7 +59,7 @@ blockquote {
     font-family: $hand;
     font-size: 1.5rem;
     line-height: 1.125;
-    -webkit-font-smoothing: initial;
+    // -webkit-font-smoothing: initial;
     @media (min-width: $breakpoint-md) {
       font-size: 2.5rem;
     }
