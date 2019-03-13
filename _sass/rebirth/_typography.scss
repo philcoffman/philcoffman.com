@@ -42,7 +42,7 @@ p {
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum";
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin: 0 0 1rem;
   @media (min-width: $breakpoint-md) {
     font-size: 1.25rem;
@@ -57,7 +57,21 @@ blockquote {
   transform: rotate(-1deg);
   p {
     font-family: $hand;
-    font-size: 2rem;
+    font-size: 1.375rem;
+    @media (min-width: $breakpoint-md) {
+      font-size: 2rem;
+    }
+    color: $ink;
+  }
+}
+
+footer {
+  padding: $space-1 $space-2;
+  overflow: hidden;
+  p {
+    display: inline-block;
+    transform: rotate(-2deg);
+    font-family: $hand;
     color: $ink;
   }
 }

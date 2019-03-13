@@ -5,13 +5,15 @@ layout: default
 <main class="posts">
   {% for post in paginator.posts %}
   <article class="post">
-    <h1 class="postTitle">
-      <a href="{{ post.url | relative_url }}">
+    <header>
+      <div class="postMeta">
         <p class="postIndex">#{{ post.index }}</p>
-        {{ post.title }}
-      </a>
-    </h1>
-    <span class="postDate">{{ post.date | date_to_string }}</span>
+        <span class="postDate">{{ post.date | date_to_string }}</span>
+      </div>
+      <h1 class="postTitle">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h1>
+    </header>
     {{ post.content }}
   </article>
   {% endfor %}

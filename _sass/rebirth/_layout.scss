@@ -14,53 +14,36 @@ img {
   max-width: 100%;
 }
 
-.grid--reg {
-  grid-column: 2 / 12;
-}
-
-.grid--full {
-  grid-column: 1 / 13;
-}
-
-.grid--hl {
-  grid-column: 2 / 7;
-}
-
-.grid--hr {
-  grid-column: 7 / 12;
-}
-
 .siteHeader {
   background: transparent url("../assets/img/pencil-swath.png") no-repeat;
-  // background-size: cover;
   background-size: 100% 100%;
-  // background-position: 0 -50px;
+  padding: $space-2;
   nav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: $space-4 $space-7;
-    font-family: $sans;
-    font-size: .875rem;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    ul {
-      li {
-        display: inline-block;
-      }
-      &:last-of-type {
-        text-align: right;
-        li {
-          a {
-            color: $neutral--darker;
-            padding: $space-1 $space-2;
-            text-decoration: none;
-          }
-        }
+    font-family: $sans;
+    font-size: .75rem;
+    .logo {
+      line-height: 0;
+      svg {
+        width: 48px;
       }
     }
-    .logo {
-      a {
-        svg {
-          width: 47px;
+    ul {
+      grid-column: 3/4;
+      li {
+        display: inline-block;
+        border-right: 2px solid $neutral--dark;
+        a {
+          display: block;
+          color: $neutral--darker;
+          padding: 1px 10px 1px $space-3;
+          // background-color: $neutral--darker;
+          @media (min-width: $breakpoint-sm) {
+
+          }
+          text-decoration: none;
         }
       }
     }
@@ -70,103 +53,103 @@ img {
 
 
 .post {
-  display: grid;
-  grid-template-columns: 1fr repeat(10, minmax(0, 6rem)) 1fr;
-  grid-gap: $space-1;
+  // display: grid;
+  // grid-template-columns: 1fr repeat(10, minmax(0, 6rem)) 1fr;
+  // grid-gap: $space-1;
+  overflow: hidden;
   margin: $space-4 0 8rem;
-  > * {
-    grid-column: 2 / 12;
-    @media (min-width: $breakpoint-sm) {
-      grid-column: 4 / 10;
+  // > * {
+  //   width: 86vw;
+  // }
+  header {
+    width: 86vw;
+    margin: 0 auto $space-1;
+  }
+  p {
+    width: 86vw;
+    margin: 0 auto $space-2;
+  }
+  blockquote p {
+    width: 86vw;
+    margin: 0 auto $space-2;
+  }
+  header {
+    width: 86vw;
+  }
+  .postIndex {
+    margin: 0 auto;
+  }
+  @media (min-width: $breakpoint-md) {
+    header {
+      width: 60vw;
+      margin: 0 auto $space-1;
+    }
+    p {
+      width: 60vw;
+      margin: 0 auto $space-4;
+    }
+    blockquote p {
+      width: 70vw;
+      margin: 0 auto $space-4;
     }
   }
-  .postTitle {
-    text-align: center;
-    a {
-      font-family: $headline-font-family;
-      font-size: 4rem;
-      line-height: 1.125;
-      color: $neutral--darker;
-      letter-spacing: -1.5px;
-      text-decoration: none;
-      position: relative;
-      display: inline-block;
+
+  // > * {
+  //   grid-column: 2 / 12;
+  //   @media (min-width: $breakpoint-sm) {
+  //     grid-column: 3 / 11;
+  //   }
+  //   @media (min-width: $breakpoint-md) {
+  //     grid-column: 4 / 10;
+  //   }
+  // }
+  header {
+    .postMeta {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      border-bottom: 2px solid $neutral--darker;
+      margin-bottom: $space-3;
       .postIndex {
         font-family: $hand;
-        font-size: 2.125rem;
+        font-size: 1.5rem;
         color: $ink;
-        position: relative;
-        display: inline-block;
-        top: -$space-7;
-        left: $space-1;
-        margin: 0;
-        transform: rotate(-9deg);
-      }
-    }
-  }
-  .postHeader {
-    text-align: center;
-    .postMeta {
-      display: inline-block;
-      margin: 0 0 2rem;
-      background-color: #FDC43F;
-      border: 2px solid $neutral--darker;
-      font-size: .7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      box-shadow: 3px 3px 0px $neutral--darker;
-      span {
-        display: inline-block;
-        padding: 4px 7px;
+        padding-left: $space-1;
+        padding-right: $space-2;
         border-right: 2px solid $neutral--darker;
-        min-width: 11px;
-        text-align: center;
+        width: auto;
       }
-      time {
-        display: inline-block;
-        padding: 4px 9px 4px 7px;
+      .postDate {
+        width: auto;
+        font-family: $hand;
+        font-size: 1.5rem;
+        color: $ink;
+        padding-left: $space-2;
       }
     }
     .postTitle {
-      font-family: $headline-font-family;
-      text-transform: uppercase;
-      font-size: 2.5rem;
-      @media (min-width: $breakpoint-sm) {
-        font-size: 3.5rem;
-      }
-      @media (min-width: $breakpoint-md) {
-        font-size: 4.5rem;
-      }
-      font-weight: 700;
-      line-height: 1;
-      margin-bottom: 2rem;
-    }
-    .postCategory {
-      font-size: .8rem;
-      line-height: 1.25;
-      &:before {
-        display: block;
-        content: "";
-        height: 2px;
-        width: 12px;
-        margin: 0 auto;
-        background-color: $neutral--darker;
-        margin-bottom: 6px;
-      }
-      strong {
-        display: block;
-        text-transform: uppercase;
+      a {
+        font-family: $headline-font-family;
+        font-size: 3rem;
+        @media (min-width: $breakpoint-md) {
+          font-size: 4.5rem;
+          width: 65%;
+        }
+        line-height: 1;
+        color: $neutral--darker;
+        letter-spacing: -1.5px;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        margin-bottom: $space-2;
       }
     }
   }
-  p {
-
-  }
-  .full {
-    grid-column: 3 / 11;
-    width: 100%;
-    padding: 0;
-  }
+  // .full {
+  //   // grid-column: 3 / 11;
+  //   width: 100%;
+  //   padding: 0;
+  // }
   .video__wrapper {
     overflow: hidden;
     position: relative;
@@ -191,26 +174,26 @@ img {
   }
 }
 
-.siteFooter {
-  padding: 0 $space-1;
-  .siteFooter__wrapper {
-    border-top: 2px solid $neutral--darker;
-    &:before {
-      display: block;
-      content: "";
-      height: 9px;
-      width: 100%;
-      margin-top: 2px;
-      background: transparent url('/assets/img/dot-grid.png') repeat;
-      background-size: 3px 3px;
-    }
-    .footnote {
-      font-size: .5rem;
-      margin: $space-2 0 $space-3;
-      strong {
-        display: block;
-        text-transform: uppercase;
-      }
-    }
-  }
-}
+// .siteFooter {
+//   padding: 0 $space-1;
+//   .siteFooter__wrapper {
+//     border-top: 2px solid $neutral--darker;
+//     &:before {
+//       display: block;
+//       content: "";
+//       height: 9px;
+//       width: 100%;
+//       margin-top: 2px;
+//       background: transparent url('/assets/img/dot-grid.png') repeat;
+//       background-size: 3px 3px;
+//     }
+//     .footnote {
+//       font-size: .5rem;
+//       margin: $space-2 0 $space-3;
+//       strong {
+//         display: block;
+//         text-transform: uppercase;
+//       }
+//     }
+//   }
+// }
