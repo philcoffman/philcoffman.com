@@ -57,9 +57,11 @@ blockquote {
   transform: rotate(-1deg);
   p {
     font-family: $hand;
-    font-size: 1.375rem;
+    font-size: 1.5rem;
+    line-height: 1.125;
+    -webkit-font-smoothing: initial;
     @media (min-width: $breakpoint-md) {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     color: $ink;
   }
@@ -73,7 +75,8 @@ footer {
     display: inline-block;
     transform: rotate(-2deg);
     font-family: $hand;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    -webkit-font-smoothing: initial;
     color: $ink;
   }
 }

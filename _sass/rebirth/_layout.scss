@@ -25,6 +25,7 @@ img {
     align-items: center;
     font-family: $sans;
     font-size: .75rem;
+    font-weight: 700;
     .logo {
       line-height: 0;
       svg {
@@ -108,22 +109,34 @@ img {
     .postMeta {
       display: grid;
       grid-template-columns: auto 1fr;
-      align-items: center;
+      // align-items: center;
       border-bottom: 2px solid $neutral--darker;
       margin-bottom: $space-3;
       .postIndex {
         font-family: $hand;
         font-size: 1.5rem;
+        -webkit-font-smoothing: initial;
+        @media (min-width: $breakpoint-md) {
+          font-size: 2rem;
+        }
+        line-height: .75;
         color: $ink;
         padding-left: $space-1;
-        padding-right: $space-2;
+        padding-right: $space-1;
+        padding-top: .375rem;
         border-right: 2px solid $neutral--darker;
         width: auto;
       }
       .postDate {
         width: auto;
         font-family: $hand;
+        line-height: .75;
         font-size: 1.5rem;
+        -webkit-font-smoothing: initial;
+        @media (min-width: $breakpoint-md) {
+          font-size: 2rem;
+        }
+        padding-top: .375rem;
         color: $ink;
         padding-left: $space-2;
       }
@@ -132,6 +145,7 @@ img {
       a {
         font-family: $headline-font-family;
         font-size: 3rem;
+        font-weight: 700;
         @media (min-width: $breakpoint-md) {
           font-size: 4.5rem;
           width: 65%;
