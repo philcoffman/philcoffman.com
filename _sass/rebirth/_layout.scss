@@ -16,15 +16,19 @@ img {
 }
 
 .siteHeader {
-  background: transparent url("../assets/img/pencil-swath.png") no-repeat;
-  background-size: 100% 100%;
-  padding: $space-2;
+  background: transparent url("../assets/img/pencil-swath.png") repeat-x;
+  background-size: 1679px 93px;
+  background-position: -300px;
+  padding: $space-2 $space-2 $space-4;
   nav {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     font-family: $sans;
     font-size: .75rem;
+    @media (min-width: $breakpoint-md) {
+      font-size: .875rem;
+    }
     font-weight: 700;
     .logo {
       line-height: 0;
@@ -67,13 +71,53 @@ img {
     width: 86vw;
     margin: 0 auto $space-1;
   }
+  h2 {
+    width: 86vw;
+    margin: 0 auto $space-2;
+  }
   p {
     width: 86vw;
     margin: 0 auto $space-2;
+    a {
+      color: $neutral--darker;
+      background: rgba(#ffc534, .6) url("../assets/img/worn.png");
+      background-size: 500px 500px;
+      padding: 2px 7px;
+      text-decoration: none;
+    }
   }
   blockquote p {
     width: 86vw;
     margin: 0 auto $space-2;
+  }
+  ol {
+    counter-reset: numbered-counter;
+    // list-style-type: decimal;
+    width: 70vw;
+    margin: 0 auto $space-2;
+    li {
+      counter-increment: numbered-counter;
+      font-family: $hand;
+      font-size: 1.125rem;
+      color: $ink;
+      border-bottom: 1px dashed $neutral;
+      padding-bottom: $space-1;
+      margin-bottom: $space-2;
+      position: relative;
+      &::before {
+        content: counter(numbered-counter) ". ";
+        display: inline-block;
+        font-family: $sans;
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: $neutral--darker;
+        position: relative;
+        left: -$space-2;
+      }
+      a {
+        color: $ink;
+      }
+    }
   }
   header {
     width: 86vw;
@@ -86,6 +130,9 @@ img {
       width: 60vw;
       margin: 0 auto $space-1;
     }
+    h2 {
+      width: 60vw;
+    }
     p {
       width: 60vw;
       margin: 0 auto $space-4;
@@ -93,6 +140,13 @@ img {
     blockquote p {
       width: 70vw;
       margin: 0 auto $space-4;
+    }
+    ol {
+      width: 60vw;
+      margin: 0 auto $space-4;
+      li {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -114,10 +168,10 @@ img {
       margin-bottom: $space-3;
       .postIndex {
         font-family: $hand;
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         // -webkit-font-smoothing: initial;
         @media (min-width: $breakpoint-md) {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
         color: $ink;
         padding-left: $space-1;
@@ -128,13 +182,13 @@ img {
       .postDate {
         width: auto;
         font-family: $hand;
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         // -webkit-font-smoothing: initial;
         @media (min-width: $breakpoint-md) {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
         color: $ink;
-        padding-left: $space-2;
+        padding-left: $space-1;
       }
     }
     .postTitle {
@@ -173,15 +227,6 @@ img {
       width: 100%;
       height: 100%;
     }
-  }
-  h2 {
-    font-size: 1.1rem;
-    @media (min-width: $breakpoint-md) {
-      font-size: 1.625rem;
-    }
-    font-weight: 700;
-    line-height: 1.375;
-    margin-bottom: .5rem;
   }
 }
 

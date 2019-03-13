@@ -35,6 +35,16 @@ body {
   line-height: 1.5;
 }
 
+h2 {
+  font-family: $sans;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.5rem;
+  }
+}
+
 p {
   font-family: $root-font-family;
   font-variant-numeric: lining-nums;
@@ -58,10 +68,10 @@ blockquote {
   p {
     font-family: $hand;
     font-size: 1.5rem;
-    line-height: 1.125;
+    line-height: 1.25;
     // -webkit-font-smoothing: initial;
     @media (min-width: $breakpoint-md) {
-      font-size: 2.5rem;
+      font-size: 2.25rem;
     }
     color: $ink;
   }
@@ -73,9 +83,9 @@ footer {
   text-align: center;
   p {
     display: inline-block;
-    transform: rotate(-2deg);
+    // transform: rotate(-2deg);
     font-family: $hand;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     -webkit-font-smoothing: initial;
     color: $ink;
   }
