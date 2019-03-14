@@ -39,7 +39,7 @@ img {
       grid-column: 3/4;
       li {
         display: inline-block;
-        border-right: 2px solid $neutral--darker;
+        border-right: 4px solid $neutral--darker;
         a {
           display: block;
           color: $neutral--darker;
@@ -196,7 +196,7 @@ img {
           position: absolute;
           bottom: 0;
           right: 0;
-          height: 40px;
+          height: $space-1;
           width: 4px;
           background: $neutral--darker url("../assets/img/worn.png");
           background-size: 125px 125px;
@@ -211,14 +211,14 @@ img {
           font-size: 1.5rem;
         }
         color: $ink;
-        padding-left: $space-half;
+        padding-left: 10px;
       }
     }
     .postTitle {
       &:before {
         content: "";
         display: block;
-        height: 6px;
+        height: 4px;
         width: 100%;
         background: $neutral--darker url("../assets/img/worn.png");
         background-size: 125px 125px;
@@ -226,7 +226,7 @@ img {
       a {
         padding: $space-4 0 $space-1;
         font-family: $headline-font-family;
-        font-size: 2.5rem;
+        font-size: 3.25rem;
         font-weight: 700;
         color: transparent;
         background-color: $neutral--darker;
@@ -234,13 +234,11 @@ img {
         background-size: 125px 125px;
         -webkit-background-clip: text;
         background-clip: text;
-        // -webkit-text-fill-color: transparent;
         @media (min-width: $breakpoint-md) {
-          font-size: 4.5rem;
-          width: 65%;
+          font-size: 5rem;
+          width: 75%;
         }
         line-height: 1;
-        // color: $neutral--darker;
         letter-spacing: -1.5px;
         text-decoration: none;
         position: relative;
