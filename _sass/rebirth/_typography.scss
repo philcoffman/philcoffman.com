@@ -36,9 +36,8 @@ body {
 }
 
 h2 {
-  font-family: $sans;
-  font-weight: bold;
-  font-size: 1.125rem;
+  font-family: $sans-display;
+  font-size: 1.25rem;
   line-height: 1.25;
   @media (min-width: $breakpoint-md) {
     font-size: 1.5rem;
@@ -64,7 +63,7 @@ p {
   }
 }
 blockquote {
-  transform: rotate(-1deg);
+  // transform: rotate(-1deg);
   p {
     font-family: $hand;
     font-size: 1.5rem;
@@ -78,14 +77,17 @@ blockquote {
 }
 
 footer {
-  padding: $space-1 $space-2;
+  margin: $space-4 0 $space-2;
   overflow: hidden;
   text-align: center;
   p {
     display: inline-block;
-    // transform: rotate(-2deg);
     font-family: $hand;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin: 0;
+    @media (min-width: $breakpoint-md) {
+      font-size: 1.5rem;
+    }
     -webkit-font-smoothing: initial;
     color: $ink;
   }

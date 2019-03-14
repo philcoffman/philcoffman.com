@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background: #f0eee9 url("/assets/img/dust-dark.png") repeat;
+  background: #fff9f1 url("/assets/img/dust-dark.png") repeat;
   background-size: 238px 238px;
 }
 body {
@@ -24,12 +24,11 @@ img {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    font-family: $sans;
+    font-family: $sans-display;
     font-size: .75rem;
     @media (min-width: $breakpoint-md) {
       font-size: .875rem;
     }
-    font-weight: 700;
     .logo {
       line-height: 0;
       svg {
@@ -40,16 +39,20 @@ img {
       grid-column: 3/4;
       li {
         display: inline-block;
-        border-right: 2px solid $neutral--dark;
+        border-right: 2px solid $neutral--darker;
         a {
           display: block;
           color: $neutral--darker;
+          text-decoration: none;
           padding: 1px 10px 1px $space-3;
-          // background-color: $neutral--darker;
           @media (min-width: $breakpoint-sm) {
 
           }
-          text-decoration: none;
+          &:hover {
+            background: $neutral--darker url("../assets/img/worn.png");
+            background-size: 125px 125px;
+            color: #fff9f1;
+          }
         }
       }
     }
@@ -73,22 +76,26 @@ img {
   }
   h2 {
     width: 86vw;
-    margin: 0 auto $space-2;
+    margin: $space-half auto;
+    padding-top: $space-half;
   }
   p {
     width: 86vw;
     margin: 0 auto $space-2;
     a {
       color: $neutral--darker;
-      background: rgba(#ffc534, .6) url("../assets/img/worn.png");
+      background: rgba(#ffc534, .45) url("../assets/img/worn.png");
       background-size: 500px 500px;
       padding: 2px 7px;
       text-decoration: none;
+      &:hover {
+        background: rgba(#ffc534, .7) url("../assets/img/worn.png");
+      }
     }
   }
   blockquote p {
-    width: 86vw;
-    margin: 0 auto $space-2;
+    width: 92vw;
+    margin: 0 auto $space-3;
   }
   ol {
     counter-reset: numbered-counter;
@@ -164,8 +171,12 @@ img {
       display: grid;
       grid-template-columns: auto 1fr;
       align-items: center;
-      border-bottom: 2px solid $neutral--darker;
-      margin-bottom: $space-3;
+      // border-bottom: 2px solid $neutral--darker;
+      // margin-bottom: $space-2;
+      position: relative;
+      // @media (min-width: $breakpoint-md) {
+      //   margin-bottom: $space-4;
+      // }
       .postIndex {
         font-family: $hand;
         font-size: 1.125rem;
@@ -174,10 +185,22 @@ img {
           font-size: 1.5rem;
         }
         color: $ink;
-        padding-left: $space-1;
+        padding-left: $space-half;
         padding-right: $space-1;
-        border-right: 2px solid $neutral--darker;
+        // border-right: 2px solid $neutral--darker;
         width: auto;
+        position: relative;
+        &:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 40px;
+          width: 4px;
+          background: $neutral--darker url("../assets/img/worn.png");
+          background-size: 125px 125px;
+        }
       }
       .postDate {
         width: auto;
@@ -188,25 +211,40 @@ img {
           font-size: 1.5rem;
         }
         color: $ink;
-        padding-left: $space-1;
+        padding-left: $space-half;
       }
     }
     .postTitle {
+      &:before {
+        content: "";
+        display: block;
+        height: 6px;
+        width: 100%;
+        background: $neutral--darker url("../assets/img/worn.png");
+        background-size: 125px 125px;
+      }
       a {
+        padding: $space-4 0 $space-1;
         font-family: $headline-font-family;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 700;
+        color: transparent;
+        background-color: $neutral--darker;
+        background-image: url("../assets/img/worn.png");
+        background-size: 125px 125px;
+        -webkit-background-clip: text;
+        background-clip: text;
+        // -webkit-text-fill-color: transparent;
         @media (min-width: $breakpoint-md) {
           font-size: 4.5rem;
           width: 65%;
         }
         line-height: 1;
-        color: $neutral--darker;
+        // color: $neutral--darker;
         letter-spacing: -1.5px;
         text-decoration: none;
         position: relative;
         display: inline-block;
-        margin-bottom: $space-2;
       }
     }
   }
@@ -227,6 +265,35 @@ img {
       width: 100%;
       height: 100%;
     }
+  }
+}
+
+.pagination {
+  width: 86vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &:before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 8px;
+    background: $neutral--darker url("../assets/img/worn.png");
+    background-size: 125px 125px;
+    margin: 0 auto;
+    margin-bottom: $space-1;
+    grid-column: 1/3;
+  }
+  p {
+    &:first-of-type {
+      text-align: right;
+    }
+  }
+  a {
+    font-family: $sans-display;
+    text-decoration: none;
+    color: $neutral--darker;
+    padding: $space-half $space-1;
   }
 }
 
