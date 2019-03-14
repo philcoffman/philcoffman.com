@@ -49,8 +49,8 @@ img {
 
           }
           &:hover {
-            background: $neutral--darker url("../assets/img/worn.png");
-            background-size: 125px 125px;
+            background: $neutral--darker url("../assets/img/wrinkle-2.png");
+            background-size: 600px 450px;
             color: #fff9f1;
           }
         }
@@ -84,12 +84,12 @@ img {
     margin: 0 auto $space-2;
     a {
       color: $neutral--darker;
-      background: rgba(#ffc534, .45) url("../assets/img/worn.png");
-      background-size: 500px 500px;
+      background: rgba(#ffc534, .45) url("../assets/img/wrinkle-2.png");
+      background-size: 600px 450px;
       padding: 2px 7px;
       text-decoration: none;
       &:hover {
-        background: rgba(#ffc534, .7) url("../assets/img/worn.png");
+        background: rgba(#ffc534, .7) url("../assets/img/wrinkle-2.png");
       }
     }
   }
@@ -198,8 +198,8 @@ img {
           right: 0;
           height: $space-1;
           width: 4px;
-          background: $neutral--darker url("../assets/img/worn.png");
-          background-size: 125px 125px;
+          background: $neutral--darker url("../assets/img/wrinkle-2.png");
+          background-size: 600px 450px;
         }
       }
       .postDate {
@@ -220,8 +220,8 @@ img {
         display: block;
         height: 4px;
         width: 100%;
-        background: $neutral--darker url("../assets/img/worn.png");
-        background-size: 125px 125px;
+        background: $neutral--darker url("../assets/img/wrinkle-2.png");
+        background-size: 600px 450px;
       }
       a {
         padding: $space-4 0 $space-1;
@@ -230,8 +230,12 @@ img {
         font-weight: 700;
         color: transparent;
         background-color: $neutral--darker;
-        background-image: url("../assets/img/worn.png");
-        background-size: 125px 125px;
+        // background-image: url("../assets/img/worn.png");
+        // background-size: 125px 125px;
+        background-image: url("../assets/img/wrinkle-2.png");
+        background-size: 600px 450px;
+        background-repeat: repeat-x;
+        background-position: left 50px;
         -webkit-background-clip: text;
         background-clip: text;
         @media (min-width: $breakpoint-md) {
@@ -276,8 +280,8 @@ img {
     display: block;
     width: 50px;
     height: 8px;
-    background: $neutral--darker url("../assets/img/worn.png");
-    background-size: 125px 125px;
+    background: $neutral--darker url("../assets/img/wrinkle-2.png");
+    background-size: 600px 450px;
     margin: 0 auto;
     margin-bottom: $space-1;
     grid-column: 1/3;
