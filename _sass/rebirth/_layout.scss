@@ -198,8 +198,8 @@ img {
           right: 0;
           height: $space-1;
           width: 4px;
-          background: $neutral--darker url("../assets/img/wrinkle-2.png");
-          background-size: 600px 450px;
+          background-image: url("../assets/img/copied-1.jpg");
+          background-size: 400px 300px;
         }
       }
       .postDate {
@@ -220,8 +220,8 @@ img {
         display: block;
         height: 4px;
         width: 100%;
-        background: $neutral--darker url("../assets/img/wrinkle-2.png");
-        background-size: 600px 450px;
+        background-image: url("../assets/img/copied-1.jpg");
+        background-size: 400px 300px;
       }
       a {
         padding: $space-4 0 $space-1;
@@ -232,10 +232,10 @@ img {
         background-color: $neutral--darker;
         // background-image: url("../assets/img/worn.png");
         // background-size: 125px 125px;
-        background-image: url("../assets/img/wrinkle-2.png");
-        background-size: 600px 450px;
+        background-image: url("../assets/img/copied-1.jpg");
+        background-size: 400px 300px;
         background-repeat: repeat-x;
-        background-position: left 50px;
+        // background-position: left 50px;
         -webkit-background-clip: text;
         background-clip: text;
         @media (min-width: $breakpoint-md) {
