@@ -23,7 +23,7 @@ layout: default
   {% if paginator.next_page %}
     <p><a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older Posts</a></p>
   {% else %}
-    <p></p>
+    <p class="strikethrough"><span>Older Posts</span></p>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
@@ -32,6 +32,6 @@ layout: default
       <p><a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer Posts</a></p>
     {% endif %}
   {% else %}
-    <p></p>
+    <p class="strikethrough"><span>Newer Posts</span></p>
   {% endif %}
 </div>
