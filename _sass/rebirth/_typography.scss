@@ -65,10 +65,11 @@ p {
 blockquote {
   p {
     font-family: $hand;
-    font-size: 1.5rem;
+    -webkit-font-smoothing: auto;
+    font-size: 1.75rem;
     line-height: 1.25;
     @media (min-width: $breakpoint-md) {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     color: $ink;
   }
@@ -95,6 +96,7 @@ footer {
   p {
     display: inline-block;
     font-family: $hand;
+    -webkit-font-smoothing: auto;
     font-size: 1.25rem;
     margin: 0;
     @media (min-width: $breakpoint-md) {

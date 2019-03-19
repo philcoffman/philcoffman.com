@@ -62,155 +62,43 @@ img {
 
 
 
-.post {
-  // display: grid;
-  // grid-template-columns: 1fr repeat(10, minmax(0, 6rem)) 1fr;
-  // grid-gap: $space-1;
+article {
   padding: $space-4 0 8rem;
-  // > * {
-  //   width: 86vw;
-  // }
   header {
     width: 86vw;
     margin: 0 auto $space-1;
-  }
-  h2 {
-    width: 86vw;
-    margin: $space-half auto;
-    padding-top: $space-half;
-  }
-  p {
-    width: 86vw;
-    margin: 0 auto $space-2;
-  }
-  a {
-    color: $neutral--darker;
-    background: rgba(#ffc534, .45) url("../assets/img/wrinkle-2.png");
-    background-size: 600px 450px;
-    padding: 2px 7px;
-    text-decoration: none;
-    &:hover {
-      background: rgba(#ffc534, .7) url("../assets/img/wrinkle-2.png");
-    }
-  }
-  figure {
-    width: 90vw;
-    margin: 0 auto $space-2;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr max-content;
-    max-width: 800px;
-    &:before {
-      content: "";
-      display: block;
-      background: transparent url("/assets/img/blue-patch.png") no-repeat;
-      background-size: 100% 100%;
-      grid-column: 1/10;
-      grid-row: 2/11;
-    }
-    img {
-      width: 100%;
-      grid-column: 2/11;
-      grid-row: 1/10;
-      z-index: 1;
-    }
-    figcaption {
-      grid-column: 2/11;
-      grid-row: 10/11;
-      font-family: $hand;
-      color: $ink;
-      font-size: 1.125rem;
-      text-align: right;
-      align-self: center;
-      padding: $space-2;
-      line-height: 1.125;
-    }
-  }
-  blockquote p {
-    width: 92vw;
-    margin: 0 auto $space-3;
-  }
-  ul {
-    width: 86vw;
-    margin: 0 auto $space-2;
-  }
-  header {
-    width: 86vw;
-  }
-  .postIndex {
-    margin: 0 auto;
-  }
-  @media (min-width: $breakpoint-md) {
-    header {
+    @media (min-width: $breakpoint-md) {
       width: 60vw;
       margin: 0 auto $space-1;
     }
-    h2 {
-      width: 60vw;
-    }
-    p {
-      width: 60vw;
-      margin: 0 auto $space-4;
-    }
-    figure {
-      width: 60vw;
-      margin: 0 auto $space-4;
-      img {
-        justify-self: right;
-        width: auto;
-      }
-      figcaption {
-        font-size: 1.5rem;
-      }
-      // text-align: center;
-    }
-    blockquote p {
-      width: 70vw;
-      margin: 0 auto $space-4;
-    }
-    ul {
-      width: 54vw;
-      margin: 0 auto $space-4;
-    }
-    ol {
-      width: 60vw;
-      margin: 0 auto $space-4;
-    }
-  }
-
-  // > * {
-  //   grid-column: 2 / 12;
-  //   @media (min-width: $breakpoint-sm) {
-  //     grid-column: 3 / 11;
-  //   }
-  //   @media (min-width: $breakpoint-md) {
-  //     grid-column: 4 / 10;
-  //   }
-  // }
-  header {
     .postMeta {
       display: grid;
       grid-template-columns: auto 1fr;
       align-items: center;
-      // border-bottom: 2px solid $neutral--darker;
-      // margin-bottom: $space-2;
       position: relative;
-      // @media (min-width: $breakpoint-md) {
-      //   margin-bottom: $space-4;
-      // }
+      margin-bottom: $space-4;
+      &:after {
+        grid-column: 1/3;
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-image: url("../assets/img/copied-3.jpg");
+        background-size: 400px 300px;
+      }
       .postIndex {
         font-family: $hand;
         font-size: 1.125rem;
-        // -webkit-font-smoothing: initial;
-        @media (min-width: $breakpoint-md) {
-          font-size: 1.5rem;
-        }
+        -webkit-font-smoothing: auto;
         color: $ink;
         padding-left: $space-half;
         padding-right: $space-1;
-        // border-right: 2px solid $neutral--darker;
         width: auto;
         position: relative;
+        margin: 0;
+        @media (min-width: $breakpoint-md) {
+          font-size: 1.5rem;
+        }
         &:after {
           content: "";
           display: inline-block;
@@ -226,26 +114,18 @@ img {
       .postDate {
         width: auto;
         font-family: $hand;
+        -webkit-font-smoothing: auto;
         font-size: 1.125rem;
-        // -webkit-font-smoothing: initial;
+        color: $ink;
+        padding-left: 10px;
         @media (min-width: $breakpoint-md) {
           font-size: 1.5rem;
         }
-        color: $ink;
-        padding-left: 10px;
       }
     }
     .postTitle {
-      &:before {
-        content: "";
-        display: block;
-        height: 4px;
-        width: 100%;
-        background-image: url("../assets/img/copied-3.jpg");
-        background-size: 400px 300px;
-      }
       a {
-        padding: $space-4 0 $space-1;
+        padding: 0 0 $space-1 0;
         font-family: $headline-font-family;
         font-size: 3.25rem;
         font-weight: 700;
@@ -265,8 +145,104 @@ img {
           font-size: 5rem;
           width: 75%;
         }
-        mix-blend-mode: multiply;
       }
+    }
+  }
+  h2 {
+    width: 86vw;
+    margin: $space-half auto;
+    padding-top: $space-half;
+    @media (min-width: $breakpoint-md) {
+      width: 60vw;
+    }
+  }
+  p {
+    width: 86vw;
+    margin: 0 auto $space-2;
+    @media (min-width: $breakpoint-md) {
+      width: 60vw;
+      margin: 0 auto $space-4;
+    }
+  }
+  a {
+    color: $neutral--darker;
+    background: rgba(#ffc534, .45) url("../assets/img/wrinkle-2.png");
+    background-size: 600px 450px;
+    padding: 2px 7px;
+    text-decoration: none;
+    &:hover {
+      background: rgba(#ffc534, .7) url("../assets/img/wrinkle-2.png");
+    }
+    @media (min-width: $breakpoint-md) {
+    }
+  }
+  figure {
+    width: 90vw;
+    margin: 0 auto $space-2;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr max-content;
+    max-width: 800px;
+    @media (min-width: $breakpoint-md) {
+      width: 60vw;
+      margin: 0 auto $space-4;
+    }
+    &:before {
+      content: "";
+      display: block;
+      background: transparent url("/assets/img/blue-patch.png") no-repeat;
+      background-size: 100% 100%;
+      grid-column: 1/10;
+      grid-row: 2/11;
+    }
+    img {
+      width: 100%;
+      grid-column: 2/11;
+      grid-row: 1/10;
+      z-index: 1;
+      @media (min-width: $breakpoint-md) {
+        justify-self: right;
+        width: auto;
+      }
+    }
+    figcaption {
+      grid-column: 2/11;
+      grid-row: 10/11;
+      font-family: $hand;
+      -webkit-font-smoothing: auto;
+      color: $ink;
+      font-size: 1.25rem;
+      text-align: right;
+      align-self: center;
+      padding: $space-2;
+      line-height: 1.125;
+      @media (min-width: $breakpoint-md) {
+        font-size: 1.75rem;
+      }
+    }
+  }
+  blockquote p {
+    width: 92vw;
+    margin: 0 auto $space-3;
+    @media (min-width: $breakpoint-md) {
+      width: 70vw;
+      margin: 0 auto $space-4;
+    }
+  }
+  ul {
+    width: 86vw;
+    margin: 0 auto $space-2;
+    @media (min-width: $breakpoint-md) {
+      width: 54vw;
+      margin: 0 auto $space-4;
+    }
+  }
+  ol {
+    width: 86vw;
+    margin: 0 auto $space-2;
+    @media (min-width: $breakpoint-md) {
+      width: 60vw;
+      margin: 0 auto $space-4;
     }
   }
   .video__wrapper {
@@ -280,6 +256,27 @@ img {
       bottom: 0;
       width: 100%;
       height: 100%;
+    }
+  }
+}
+
+article.note {
+  header {
+    h1 {
+      display: none;
+    }
+  }
+  p {
+    font-family: $hand;
+    color: $ink;
+    font-size: 1.75rem;
+    line-height: 1.25;
+    -webkit-font-smoothing: auto;
+    @media (min-width: $breakpoint-md) {
+      font-size: 2.5rem;
+    }
+    a {
+      color: darken($ink, 10%);
     }
   }
 }
@@ -342,27 +339,3 @@ img {
     padding: $space-half $space-1;
   }
 }
-
-// .siteFooter {
-//   padding: 0 $space-1;
-//   .siteFooter__wrapper {
-//     border-top: 2px solid $neutral--darker;
-//     &:before {
-//       display: block;
-//       content: "";
-//       height: 9px;
-//       width: 100%;
-//       margin-top: 2px;
-//       background: transparent url('/assets/img/dot-grid.png') repeat;
-//       background-size: 3px 3px;
-//     }
-//     .footnote {
-//       font-size: .5rem;
-//       margin: $space-2 0 $space-3;
-//       strong {
-//         display: block;
-//         text-transform: uppercase;
-//       }
-//     }
-//   }
-// }

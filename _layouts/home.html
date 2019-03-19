@@ -4,7 +4,7 @@ layout: default
 
 <main class="posts">
   {% for post in paginator.posts %}
-  <article class="post">
+  <article class="{{ post.tags }}">
     <header>
       <div class="postMeta">
         <p class="postIndex">#{{ post.index }}</p>
