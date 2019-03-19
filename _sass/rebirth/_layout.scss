@@ -39,18 +39,16 @@ img {
       grid-column: 3/4;
       li {
         display: inline-block;
-        border-right: 4px solid $neutral--darker;
         a {
           display: block;
           color: $neutral--darker;
           text-decoration: none;
           padding: 1px 10px 1px $space-3;
           @media (min-width: $breakpoint-sm) {
-
           }
           &:hover {
-            background: $neutral--darker url("../assets/img/wrinkle-2.png");
-            background-size: 600px 450px;
+            background: $neutral--darker url("../assets/img/copied-2.jpg");
+            background-size: 400px 300px;
             color: #fff9f1;
           }
         }
@@ -97,9 +95,12 @@ img {
     width: 92vw;
     margin: 0 auto $space-3;
   }
+  ul {
+    width: 86vw;
+    margin: 0 auto $space-2;
+  }
   ol {
     counter-reset: numbered-counter;
-    // list-style-type: decimal;
     width: 70vw;
     margin: 0 auto $space-2;
     li {
@@ -146,6 +147,10 @@ img {
     }
     blockquote p {
       width: 70vw;
+      margin: 0 auto $space-4;
+    }
+    ul {
+      width: 54vw;
       margin: 0 auto $space-4;
     }
     ol {
@@ -198,7 +203,7 @@ img {
           right: 0;
           height: $space-1;
           width: 4px;
-          background-image: url("../assets/img/copied-1.jpg");
+          background-image: url("../assets/img/copied-3.jpg");
           background-size: 400px 300px;
         }
       }
@@ -220,7 +225,7 @@ img {
         display: block;
         height: 4px;
         width: 100%;
-        background-image: url("../assets/img/copied-1.jpg");
+        background-image: url("../assets/img/copied-3.jpg");
         background-size: 400px 300px;
       }
       a {
@@ -270,6 +275,28 @@ img {
   }
 }
 
+.post:nth-child(2) {
+  .postTitle {
+    a {
+      background-image: url("../assets/img/copied-2.jpg");
+    }
+  }
+}
+.post:nth-child(3) {
+  .postTitle {
+    a {
+      background-image: url("../assets/img/copied-3.jpg");
+    }
+  }
+}
+.post:nth-child(4) {
+  .postTitle {
+    a {
+      background-image: url("../assets/img/copied-4.jpg");
+    }
+  }
+}
+
 .pagination {
   width: 86vw;
   margin: 0 auto;
@@ -280,8 +307,8 @@ img {
     display: block;
     width: 50px;
     height: 8px;
-    background: $neutral--darker url("../assets/img/wrinkle-2.png");
-    background-size: 600px 450px;
+    background: $neutral--darker url("../assets/img/copied-3.jpg");
+    background-size: 400px 300px;
     margin: 0 auto;
     margin-bottom: $space-1;
     grid-column: 1/3;

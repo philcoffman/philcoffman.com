@@ -63,16 +63,29 @@ p {
   }
 }
 blockquote {
-  // transform: rotate(-1deg);
   p {
     font-family: $hand;
     font-size: 1.5rem;
     line-height: 1.25;
-    // -webkit-font-smoothing: initial;
     @media (min-width: $breakpoint-md) {
-      font-size: 2.25rem;
+      font-size: 2rem;
     }
     color: $ink;
+  }
+}
+
+.post {
+  ul {
+    list-style: disc;
+    padding-left: $space-4;
+    li {
+      font-size: 1.125rem;
+      margin: 0 0 1rem;
+      @media (min-width: $breakpoint-md) {
+        font-size: 1.25rem;
+        margin: 0 0 1rem;
+      }
+    }
   }
 }
 
