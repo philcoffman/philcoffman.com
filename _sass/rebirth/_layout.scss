@@ -63,7 +63,10 @@ img {
 
 
 article {
-  padding: $space-4 0 8rem;
+  padding: $space-2 0 $space-4;
+  @media (min-width: $breakpoint-md) {
+    padding: $space-4 0 $space-8;
+  }
   header {
     width: 86vw;
     margin: 0 auto $space-1;
@@ -88,7 +91,7 @@ article {
       }
       .postIndex {
         font-family: $hand;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         -webkit-font-smoothing: auto;
         color: $ink;
         padding-left: $space-half;
@@ -115,7 +118,7 @@ article {
         width: auto;
         font-family: $hand;
         -webkit-font-smoothing: auto;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         color: $ink;
         padding-left: 10px;
         @media (min-width: $breakpoint-md) {
@@ -211,13 +214,13 @@ article {
       font-family: $hand;
       -webkit-font-smoothing: auto;
       color: $ink;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       text-align: right;
       align-self: center;
       padding: $space-2;
       line-height: 1.125;
       @media (min-width: $breakpoint-md) {
-        font-size: 1.75rem;
+        font-size: 2rem;
       }
     }
   }
@@ -281,13 +284,22 @@ article.note {
     a {
       color: $ink;
       position: relative;
-      background: transparent linear-gradient($ink 100%, transparent 100%);
+      background: transparent linear-gradient(rgba($ink, .3) 100%, transparent 100%);
       background-position: left bottom 9px;
       background-repeat: repeat-x;
       background-size: 100% 2px;
       text-shadow: 2px 2px #fff9f1, 2px -2px #fff9f1, -2px 2px #fff9f1, -2px -2px #fff9f1;
       @media (min-width: $breakpoint-md) {
         background-position: left bottom 14px;
+      }
+      &:hover {
+        background: transparent linear-gradient(rgba($ink, 1) 100%, transparent 100%);
+        background-position: left bottom 9px;
+        background-repeat: repeat-x;
+        background-size: 100% 2px;
+        @media (min-width: $breakpoint-md) {
+          background-position: left bottom 14px;
+        }
       }
     }
   }
