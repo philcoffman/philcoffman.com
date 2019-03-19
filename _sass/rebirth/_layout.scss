@@ -222,8 +222,9 @@ article {
     }
   }
   blockquote p {
-    width: 92vw;
+    width: 86vw;
     margin: 0 auto $space-3;
+    text-align: justify;
     @media (min-width: $breakpoint-md) {
       width: 70vw;
       margin: 0 auto $space-4;
@@ -262,21 +263,32 @@ article {
 
 article.note {
   header {
-    h1 {
-      display: none;
-    }
+    display: none;
   }
   p {
     font-family: $hand;
     color: $ink;
     font-size: 1.75rem;
-    line-height: 1.25;
+    line-height: 1.125;
     -webkit-font-smoothing: auto;
+    width: 86vw;
+    text-align: justify;
     @media (min-width: $breakpoint-md) {
+      width: 70vw;
       font-size: 2.5rem;
+      line-height: 1.25;
     }
     a {
-      color: darken($ink, 10%);
+      color: $ink;
+      position: relative;
+      background: transparent linear-gradient($ink 100%, transparent 100%);
+      background-position: left bottom 9px;
+      background-repeat: repeat-x;
+      background-size: 100% 2px;
+      text-shadow: 2px 2px #fff9f1, 2px -2px #fff9f1, -2px 2px #fff9f1, -2px -2px #fff9f1;
+      @media (min-width: $breakpoint-md) {
+        background-position: left bottom 14px;
+      }
     }
   }
 }
