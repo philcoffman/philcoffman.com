@@ -88,7 +88,7 @@ article {
       }
       .postIndex {
         font-family: $hand;
-        font-size: 1.125rem;
+        font-size: 1.75rem;
         -webkit-font-smoothing: auto;
         color: $ink;
         padding-left: $space-half;
@@ -97,7 +97,7 @@ article {
         position: relative;
         margin: 0;
         @media (min-width: $breakpoint-md) {
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
         &:after {
           content: "";
@@ -115,11 +115,11 @@ article {
         width: auto;
         font-family: $hand;
         -webkit-font-smoothing: auto;
-        font-size: 1.125rem;
+        font-size: 1.75rem;
         color: $ink;
         padding-left: 10px;
         @media (min-width: $breakpoint-md) {
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
       }
     }
@@ -224,10 +224,10 @@ article {
   blockquote p {
     width: 86vw;
     margin: 0 auto $space-3;
-    text-align: justify;
     @media (min-width: $breakpoint-md) {
       width: 70vw;
       margin: 0 auto $space-4;
+      text-align: justify;
     }
   }
   ul {
@@ -268,15 +268,15 @@ article.note {
   p {
     font-family: $hand;
     color: $ink;
-    font-size: 1.75rem;
+    font-size: 2rem;
     line-height: 1.125;
     -webkit-font-smoothing: auto;
     width: 86vw;
-    text-align: justify;
     @media (min-width: $breakpoint-md) {
       width: 70vw;
       font-size: 2.5rem;
       line-height: 1.25;
+      text-align: justify;
     }
     a {
       color: $ink;
