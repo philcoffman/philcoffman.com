@@ -312,6 +312,7 @@ article {
     max-width: 850px;
     margin: 0 auto $space-2;
     list-style: decimal;
+    padding-left: $space-4;
     @media (min-width: $breakpoint-md) {
       width: 58vw;
       margin: 0 auto $space-4;
@@ -375,6 +376,43 @@ article {
             display: none;
           }
         }
+      }
+    }
+  }
+}
+
+article.experiences {
+  figure {
+    &:before {
+      content: "";
+      background: transparent url("/assets/img/orange-patch-angled.png") no-repeat;
+      background-size: 100% 100%;
+      grid-column: 1/11;
+      grid-row: 1/11;
+    }
+    img {
+      width: 100%;
+      grid-column: 2/10;
+      grid-row: 2/10;
+      z-index: 1;
+      @media (min-width: $breakpoint-md) {
+        justify-self: right;
+        width: auto;
+      }
+    }
+    figcaption {
+      grid-column: 1/11;
+      grid-row: 10/11;
+      font-family: $hand;
+      -webkit-font-smoothing: auto;
+      color: $ink;
+      font-size: 1.5rem;
+      text-align: center;
+      align-self: center;
+      padding: $space-2;
+      line-height: 1.125;
+      @media (min-width: $breakpoint-md) {
+        font-size: 2rem;
       }
     }
   }
