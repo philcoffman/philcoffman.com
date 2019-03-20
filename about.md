@@ -10,6 +10,8 @@ type: about
   <figcaption>Phil Coffman</figcaption>
 </figure>
 
-<div markdown="1">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.
+<div markdown="1">
+I'm a designer living in Austin, TX currently in the Design Lead role at [PCPartPicker](https://pcpartpicker.com/). My primary creative areas include web design, interface layout and design, and overall art direction. I'm also actively improving my understanding of motion graphics and 3D whenever I get the chance. I used to draw back before computers were cool. I aspire to get back into it in my downtime using Procreate on the iPad Pro.
 
-  Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</div>
+I've been married to the love of my life for over 15 years and we get to parent and raise three awesome kids. While design is a big part of my life and will forever be a passion of mine, my family, friends, and faith are the true foundations of my life.
+</div>

@@ -203,8 +203,6 @@ article {
     &:hover {
       background: rgba(#ffc534, .7) url("../assets/img/wrinkle-2.png");
     }
-    @media (min-width: $breakpoint-md) {
-    }
   }
   figure {
     width: 90vw;
@@ -471,6 +469,16 @@ section.about {
         font-size: 1.5rem;
       }
     }
+    a {
+      color: $neutral--darker;
+      background: rgba(#ffc534, .45) url("../assets/img/wrinkle-2.png");
+      background-size: 600px 450px;
+      padding: 2px 7px;
+      text-decoration: none;
+      &:hover {
+        background: rgba(#ffc534, .7) url("../assets/img/wrinkle-2.png");
+      }
+    }
   }
 }
 
@@ -514,19 +522,55 @@ section.about {
   }
 }
 
-footer {
-  padding: $space-4 0 $space-2;
+.siteFooter {
+  padding: $space-4 $space-2 $space-2;
   text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  align-items: center;
+  ul {
+    font-family: $sans;
+    margin-bottom: $space-1;
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: 0;
+    }
+    li {
+      display: inline-block;
+      font-size: .75rem;
+      @media (min-width: $breakpoint-md) {
+        font-size: .875rem;
+      }
+      a {
+        font-family: $sans-display;
+        color: $neutral--darker;
+        padding: 0 $space-half;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &:last-of-type {
+        display: block;
+        padding: 0 $space-half;
+        font-size: .5rem;
+        @media (min-width: $breakpoint-md) {
+          font-size: .75rem;
+        }
+      }
+    }
+  }
   p {
     display: inline-block;
     font-family: $hand;
     -webkit-font-smoothing: auto;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     margin: 0;
     -webkit-font-smoothing: auto;
     color: $ink;
     @media (min-width: $breakpoint-md) {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
   }
 }
