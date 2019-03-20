@@ -1,7 +1,7 @@
 ---
 title: Hope In Ethiopia
 date: 2015-05-25 10:38:00 -05:00
-tags: life experience faith
+tags: life experiences faith
 layout: post
 type: article
 ---

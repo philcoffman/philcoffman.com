@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="{{ page.type }}{% for tag in page.tags %} {{ tag }}{% endfor %}">
 
-  <header>
+  <header class="postHeader">
     <div class="postMeta">
       <p class="postIndex">#{{ page.index }}</p>
       <span class="postDate">{{ page.date | date_to_string }}</span>
@@ -15,9 +15,14 @@ layout: default
 
   {{ content }}
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+  <footer class="postFooter">
+    <p><span>{{ page.type }}</span> posted in</p>
+    <ul>
+      {% for tag in page.tags %}
+        <li>{{ tag }}</li>
+      {% endfor %}
+    </ul>
+  </footer>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
