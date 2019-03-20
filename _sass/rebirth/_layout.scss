@@ -1,10 +1,17 @@
+::selection {
+  background-color: rgba($neutral--darker, .15);
+}
+
+::-moz-selection {
+  background-color: rgba($neutral--darker, .15);
+}
+
 html {
   box-sizing: border-box;
   background: #fff9f1 url("/assets/img/dust-dark.png") repeat;
   background-size: 238px 238px;
 }
 body {
-  -webkit-font-smoothing: antialiased;
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
@@ -227,18 +234,56 @@ article {
   blockquote p {
     width: 86vw;
     margin: 0 auto $space-3;
+    color: $ink;
+    font-family: $hand;
+    -webkit-font-smoothing: auto;
+    font-size: 2rem;
+    line-height: 1.125;
     @media (min-width: $breakpoint-md) {
       width: 70vw;
       margin: 0 auto $space-4;
+      font-size: 2.5rem;
+      line-height: 1.25;
       text-align: justify;
+    }
+    a {
+      color: $ink;
+      position: relative;
+      background: transparent linear-gradient(rgba($ink, .3) 100%, transparent 100%);
+      background-position: left bottom 9px;
+      background-repeat: repeat-x;
+      background-size: 100% 2px;
+      text-shadow: 2px 2px #fff9f1, 2px -2px #fff9f1, -2px 2px #fff9f1, -2px -2px #fff9f1;
+      @media (min-width: $breakpoint-md) {
+        background-position: left bottom 14px;
+      }
+      &:hover {
+        background: transparent linear-gradient(rgba($ink, 1) 100%, transparent 100%);
+        background-position: left bottom 9px;
+        background-repeat: repeat-x;
+        background-size: 100% 2px;
+        @media (min-width: $breakpoint-md) {
+          background-position: left bottom 14px;
+        }
+      }
     }
   }
   ul {
     width: 86vw;
     margin: 0 auto $space-2;
+    list-style: disc;
+    padding-left: $space-4;
     @media (min-width: $breakpoint-md) {
       width: 54vw;
       margin: 0 auto $space-4;
+    }
+    li {
+      font-size: 1.125rem;
+      margin: 0 0 1rem;
+      @media (min-width: $breakpoint-md) {
+        font-size: 1.25rem;
+        margin: 0 0 1rem;
+      }
     }
   }
   ol {
@@ -361,5 +406,22 @@ article.note {
     text-decoration: none;
     color: $neutral--darker;
     padding: $space-half $space-1;
+  }
+}
+
+footer {
+  padding: $space-4 0 $space-2;
+  text-align: center;
+  p {
+    display: inline-block;
+    font-family: $hand;
+    -webkit-font-smoothing: auto;
+    font-size: 1.25rem;
+    margin: 0;
+    -webkit-font-smoothing: auto;
+    color: $ink;
+    @media (min-width: $breakpoint-md) {
+      font-size: 1.5rem;
+    }
   }
 }

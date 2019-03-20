@@ -33,6 +33,7 @@
 body {
   font-family: $root-font-family;
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 h2 {
@@ -57,53 +58,7 @@ p {
     font-size: 1.25rem;
     margin: 0 0 1rem;
   }
-  // hyphens: auto;
   strong {
     font-weight: 700;
-  }
-}
-blockquote {
-  p {
-    font-family: $hand;
-    -webkit-font-smoothing: auto;
-    font-size: 2rem;
-    line-height: 1.125;
-    @media (min-width: $breakpoint-md) {
-      font-size: 2.5rem;
-      line-height: 1.25;
-    }
-    color: $ink;
-  }
-}
-
-.post {
-  ul {
-    list-style: disc;
-    padding-left: $space-4;
-    li {
-      font-size: 1.125rem;
-      margin: 0 0 1rem;
-      @media (min-width: $breakpoint-md) {
-        font-size: 1.25rem;
-        margin: 0 0 1rem;
-      }
-    }
-  }
-}
-
-footer {
-  padding: $space-4 0 $space-2;
-  text-align: center;
-  p {
-    display: inline-block;
-    font-family: $hand;
-    -webkit-font-smoothing: auto;
-    font-size: 1.25rem;
-    margin: 0;
-    @media (min-width: $breakpoint-md) {
-      font-size: 1.5rem;
-    }
-    -webkit-font-smoothing: initial;
-    color: $ink;
   }
 }
