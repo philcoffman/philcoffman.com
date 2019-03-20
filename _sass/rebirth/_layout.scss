@@ -523,9 +523,10 @@ section.about {
 }
 
 .siteFooter {
-  padding: $space-4 $space-2 $space-2;
+  padding: $space-4 0 $space-2;
   text-align: center;
   @media (min-width: $breakpoint-sm) {
+    padding: $space-4 $space-2 $space-2;
     text-align: left;
     display: grid;
     grid-template-columns: 1fr auto;
