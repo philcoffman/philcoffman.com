@@ -1,9 +1,9 @@
 ---
 title: Hope In Ethiopia
 date: 2015-05-25 10:38:00 -05:00
-tags:
-- Life Experiences
+tags: life experience faith
 layout: post
+type: article
 ---
 
 I have been aware of [Hope in Ethiopia](http://hopeinethiopia.org/) for several years since most of the people involved go to my local church. I'll admit that I casually listened to the reports from the team but never took action to get involved myself. As I mentioned in [my previous post](http://blog.philcoffman.com/here-i-am-lord-send-me/) it wasn't until we opened the door to fostering that I felt led to take a closer look. Hope in Ethiopia was born when the orphan and adoption ministry of my local church, [Grace Covenant Church](http://grace360.org/), became aware of a community of orphan-led households in Zeway, Ethiopia and surrounding towns. This was brought to their attention through a relationship they had with [Food for the Hungry](http://fh.org/) who were already present in Ethiopia, working to end poverty. These orphans were thrown into caring for each other after the death of their parents. To survive they would find whatever ways they could to make money to buy food, which in turn robbed them of the chance to go to school and gain an education. Many of these children had no other people in their lives to rely on for support. Without intervention these kids essentially have little hope for a future.
@@ -17,12 +17,12 @@ I've been to Africa a couple times before on safari in Kenya so I knew already t
 Despite a long journey of flights and car rides we all settled in fairly well our first day, which was Sunday. Monday would be our first full day of home visits. The schedule for most of the week looked roughly like this:
 
 
-* 7:30am — Breakfast at our hotel, a wonderful place called the [Bethlehem Hotel](http://www.tripadvisor.com/Hotel_Review-g3168046-d5308934-Reviews-Bethlehem_Hotel-Ziway_Oromiya_Region.html)
-* 8:00am — Meet up with the FH team for a time of worship, devotional, and prayer before we went out on our visits
-* 9:00am — Break up into two teams and visit 2-3 households
-* Noon — Lunch
-* 2:00pm — Visit another 2-3 households
-* 6:00pm — Dinner
+1. 7:30am — Breakfast at our hotel, a wonderful place called the [Bethlehem Hotel](http://www.tripadvisor.com/Hotel_Review-g3168046-d5308934-Reviews-Bethlehem_Hotel-Ziway_Oromiya_Region.html)
+2. 8:00am — Meet up with the FH team for a time of worship, devotional, and prayer before we went out on our visits
+3. 9:00am — Break up into two teams and visit 2-3 households
+4. Noon — Lunch
+5. 2:00pm — Visit another 2-3 households
+6. 6:00pm — Dinner
 
 
 Time in Zeway moves at a pace different from what we're used to in the States. We knew generally when we needed to be at a place but rarely did we hold hard and fast to the schedule. It was a wonderful break from the neck-break speed at which we like to run our days. I enjoyed not always looking at the clock, letting moments move and flow as they wished, and allowing the day to carry me through rather than trying to bend it to my will.

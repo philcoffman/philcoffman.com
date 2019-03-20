@@ -1,9 +1,9 @@
 ---
 title: It's Not Enough
 date: 2014-01-25 09:53:00 -06:00
-tags:
-- Inspiration
+tags: inspiration
 layout: post
+type: article
 ---
 
 Music is a huge part of who I am. My parents taught me to appreciate it from an early age, my older brother got the musical ability genes and has been a big influence in the discovery of new artists. Music helps me get through my 45 min work commute and if I didn’t have my over-the-ear headphones and Apple Music then I'd be far less productive at work.

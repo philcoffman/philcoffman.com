@@ -1,9 +1,9 @@
 ---
 title: Battle of the Blog
 date: 2015-05-07 10:36:00 -05:00
-tags:
-- Not Sure Yet
+tags: blogging
 layout: post
+type: article
 ---
 
 I have a love/hate relationship with blogging. I've shared about this before on previous blogs, but I used to be a more disciplined writer and thoroughly enjoyed blogging when I was in a publishing rhythm. I had an RSS reader churning through hundreds of feeds which was for all intents and purposes my daily newspaper. Fast-forward a few social network launches and the death of Google Reader and today I get most of my news from Twitter and a handful of sites I visit manually on a regular basis. Plus I've lost the discipline of blogging myself, mostly because in 2009 Twitter became my broadcasting medium.

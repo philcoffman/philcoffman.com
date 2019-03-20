@@ -8,7 +8,7 @@
 
 html {
   box-sizing: border-box;
-  background: #fff9f1 url("/assets/img/dust-dark.png") repeat;
+  background: $body-bg url("/assets/img/dust-dark.png") repeat;
   background-size: 238px 238px;
 }
 body {
@@ -30,6 +30,9 @@ img {
   background-size: 1679px 93px;
   background-position: -300px;
   padding: $space-2 $space-2 $space-4;
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $space-2;
+  }
   nav {
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -53,13 +56,13 @@ img {
           display: block;
           color: $neutral--darker;
           text-decoration: none;
-          padding: 1px 10px 1px $space-3;
+          padding: 1px 10px 1px $space-2;
           @media (min-width: $breakpoint-sm) {
           }
           &:hover {
-            background: $neutral--darker url("../assets/img/copied-2.jpg");
+            background: $neutral--darker url("../assets/img/copied-4.jpg");
             background-size: 400px 300px;
-            color: #fff9f1;
+            color: $body-bg;
           }
         }
       }
@@ -76,13 +79,15 @@ article {
   }
   header {
     width: 86vw;
+    max-width: 1000px;
     margin: 0 auto $space-1;
     @media (min-width: $breakpoint-md) {
-      width: 60vw;
+      width: 64vw;
       margin: 0 auto $space-1;
     }
     .postMeta {
       display: grid;
+      // grid-template-columns: auto 1fr 92px;
       grid-template-columns: auto 1fr;
       align-items: center;
       position: relative;
@@ -132,6 +137,13 @@ article {
           font-size: 2rem;
         }
       }
+      // .postTag {
+      //   grid-column: 3/4;
+      //   position: absolute;
+      //   background: none;
+      //   padding: 0;
+      //   right: 0;
+      // }
     }
     .postTitle {
       a {
@@ -160,18 +172,26 @@ article {
   }
   h2 {
     width: 86vw;
+    max-width: 1000px;
     margin: $space-half auto;
     padding-top: $space-half;
     @media (min-width: $breakpoint-md) {
-      width: 60vw;
+      width: 64vw;
     }
   }
   p {
     width: 86vw;
+    max-width: 1000px;
     margin: 0 auto $space-2;
+    font-weight: 500;
+    font-size: 1.125rem;
     @media (min-width: $breakpoint-md) {
-      width: 60vw;
+      font-size: 1.25rem;
+      width: 64vw;
       margin: 0 auto $space-4;
+    }
+    @media (min-width: $breakpoint-lg) {
+      font-size: 1.5rem;
     }
   }
   a {
@@ -188,13 +208,13 @@ article {
   }
   figure {
     width: 90vw;
+    max-width: 800px;
     margin: 0 auto $space-2;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr max-content;
-    max-width: 800px;
     @media (min-width: $breakpoint-md) {
-      width: 60vw;
+      width: 64vw;
       margin: 0 auto $space-4;
     }
     &:before {
@@ -233,6 +253,7 @@ article {
   }
   blockquote p {
     width: 86vw;
+    max-width: 1200px;
     margin: 0 auto $space-3;
     color: $ink;
     font-family: $hand;
@@ -240,7 +261,7 @@ article {
     font-size: 2rem;
     line-height: 1.125;
     @media (min-width: $breakpoint-md) {
-      width: 70vw;
+      width: 72vw;
       margin: 0 auto $space-4;
       font-size: 2.5rem;
       line-height: 1.25;
@@ -253,7 +274,7 @@ article {
       background-position: left bottom 9px;
       background-repeat: repeat-x;
       background-size: 100% 2px;
-      text-shadow: 2px 2px #fff9f1, 2px -2px #fff9f1, -2px 2px #fff9f1, -2px -2px #fff9f1;
+      text-shadow: 2px 2px $body-bg, 2px -2px $body-bg, -2px 2px $body-bg, -2px -2px $body-bg;
       @media (min-width: $breakpoint-md) {
         background-position: left bottom 14px;
       }
@@ -270,11 +291,12 @@ article {
   }
   ul {
     width: 86vw;
+    max-width: 850px;
     margin: 0 auto $space-2;
     list-style: disc;
     padding-left: $space-4;
     @media (min-width: $breakpoint-md) {
-      width: 54vw;
+      width: 58vw;
       margin: 0 auto $space-4;
     }
     li {
@@ -288,10 +310,20 @@ article {
   }
   ol {
     width: 86vw;
+    max-width: 850px;
     margin: 0 auto $space-2;
+    list-style: decimal;
     @media (min-width: $breakpoint-md) {
-      width: 60vw;
+      width: 58vw;
       margin: 0 auto $space-4;
+    }
+    li {
+      font-size: 1.125rem;
+      margin: 0 0 1rem;
+      @media (min-width: $breakpoint-md) {
+        font-size: 1.25rem;
+        margin: 0 0 1rem;
+      }
     }
   }
   .video__wrapper {
@@ -314,12 +346,13 @@ article.note {
     display: none;
   }
   p {
+    width: 86vw;
+    max-width: 1200px;
     font-family: $hand;
     color: $ink;
     font-size: 2rem;
     line-height: 1.125;
     -webkit-font-smoothing: auto;
-    width: 86vw;
     @media (min-width: $breakpoint-md) {
       width: 70vw;
       font-size: 2.5rem;
@@ -333,7 +366,7 @@ article.note {
       background-position: left bottom 9px;
       background-repeat: repeat-x;
       background-size: 100% 2px;
-      text-shadow: 2px 2px #fff9f1, 2px -2px #fff9f1, -2px 2px #fff9f1, -2px -2px #fff9f1;
+      text-shadow: 2px 2px $body-bg, 2px -2px $body-bg, -2px 2px $body-bg, -2px -2px $body-bg;
       @media (min-width: $breakpoint-md) {
         background-position: left bottom 14px;
       }
@@ -372,6 +405,75 @@ article.note {
   }
 }
 
+section.about {
+  width: 90vw;
+  margin: 0 auto;
+  @media (min-width: $breakpoint-md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $space-8;
+    justify-items: center;
+    align-items: center;
+  }
+  figure {
+    display: grid;
+    max-width: 800px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr max-content;
+    margin-bottom: $space-4;
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: 0;
+    }
+    &:before {
+      content: "";
+      display: block;
+      background: transparent url("/assets/img/blue-patch.png") no-repeat;
+      background-size: 100% 100%;
+      grid-column: 1/10;
+      grid-row: 2/11;
+    }
+    img {
+      width: 100%;
+      grid-column: 2/11;
+      grid-row: 1/10;
+      z-index: 1;
+      @media (min-width: $breakpoint-md) {
+        justify-self: right;
+        width: auto;
+      }
+    }
+    figcaption {
+      grid-column: 2/11;
+      grid-row: 10/11;
+      font-family: $hand;
+      -webkit-font-smoothing: auto;
+      color: $ink;
+      font-size: 1.5rem;
+      text-align: right;
+      align-self: center;
+      padding: $space-2;
+      line-height: 1.125;
+      @media (min-width: $breakpoint-md) {
+        font-size: 2rem;
+      }
+    }
+  }
+  div {
+    p {
+      font-weight: 500;
+      font-size: 1.125rem;
+      margin-bottom: $space-2;
+      @media (min-width: $breakpoint-md) {
+        font-size: 1.25rem;
+        margin-bottom: $space-4;
+      }
+      @media (min-width: $breakpoint-lg) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
 .pagination {
   width: 86vw;
   margin: 0 auto;
@@ -406,6 +508,9 @@ article.note {
     text-decoration: none;
     color: $neutral--darker;
     padding: $space-half $space-1;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

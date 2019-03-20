@@ -1,9 +1,9 @@
 ---
 title: Going Under the Knife
 date: 2016-05-11 10:41:00 -05:00
-tags:
-- Life Experiences
+tags: life experience
 layout: post
+type: article
 ---
 
 In Elementary school I got into a fight with another kid. The circumstances arose from some pointless squabble we had and for whatever reason we decided we should fight the next day during recess. By nature I'm not much of a fighter, but due to our disagreement, and because the rest of the school knew about it, I suppose I felt obligated to go through with it. This would be my first fist-fight but I wasn't too worried. He was smaller and I knew I could take him.

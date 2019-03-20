@@ -1,9 +1,9 @@
 ---
 title: Here I Am Lord, Send Me
 date: 2015-05-11 10:37:00 -05:00
-tags:
-- Life Experiences
+tags: life experience faith
 layout: post
+type: article
 ---
 
 This is the first of a collection of posts regarding my involvement with a little community of kids in Zeway and a partnership called [Hope in Ethiopia](http://hopeinethiopia.org/). Subsequent posts will explain in better detail who the kids are, what the partnership is about, and my experiences serving alongside them. But I want to start first by sharing how I got involved.

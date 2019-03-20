@@ -51,13 +51,6 @@ p {
   -moz-font-feature-settings: "lnum";
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum";
-  font-weight: 500;
-  font-size: 1.125rem;
-  margin: 0 0 1rem;
-  @media (min-width: $breakpoint-md) {
-    font-size: 1.25rem;
-    margin: 0 0 1rem;
-  }
   strong {
     font-weight: 700;
   }

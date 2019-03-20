@@ -1,9 +1,9 @@
 ---
 title: Answering My Fostering Questions
 date: 2016-02-26 10:40:00 -06:00
-tags:
-- What Matters Most
+tags: life family faith
 layout: post
+type: article
 ---
 
 Foster training provided a wealth of knowledge for us but obviously there are plenty of questions that are left unanswered during that period because the answers require first-hand experience. With this post I'd like to talk through the questions I had going into fostering and how they have been answered so far.

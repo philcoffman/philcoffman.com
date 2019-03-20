@@ -1,9 +1,9 @@
 ---
 title: Changing Things Up
 date: 2014-10-03 10:34:00 -05:00
-tags:
-- Life Experiences
+tags: career
 layout: post
+type: article
 ---
 
 Today is my last day at <a href="https://gospacecraft.com/">SpaceCraft</a>. For the past year I've served as the VP of Design, helping support the company in a management and creative role. The entire experience has been great and it's bittersweet to part ways. I owe a lot of my enjoyment this past year to the team, who are some of the brightest people I've ever worked with. That coupled with a product that continues to grow and mature at a rapid pace made my job a joy to leave home for.

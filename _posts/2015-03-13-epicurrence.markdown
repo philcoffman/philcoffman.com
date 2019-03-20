@@ -1,18 +1,19 @@
 ---
 title: Epicurrence
 date: 2015-03-13 10:35:00 -05:00
-tags:
-- Life Experiences
+tags: events
 layout: post
+type: article
 ---
 
-<div class="grid--full">
-  <img src="https://via.placeholder.com/1500x400">
-</div>
+<figure>
+  <img src="/assets/img/posts/3/epicurrence-header.jpg" alt="Epicurrence No.1 - South Lake Tahoe">
+  <figcaption>Epicurrence No.1 - South Lake Tahoe</figcaption>
+</figure>
 
-<p class="grid__half--left">Something special happened in South Lake Tahoe this week. I boarded the plane bound for the west coast and [Epicurrence](http://epicurrence.com/) early Sunday morning with anticipation and few expectations. I wasn't sure what I was in for over the next few days. I had hopes for new experiences (I hadn't skied since I was a kid, more to come on this), opportunities to meet some of my design heroes, and a desire to leave inspired to further my creative passions. Epicurrence fulfilled and exceeded those hopes.</p>
+Something special happened in South Lake Tahoe this week. I boarded the plane bound for the west coast and [Epicurrence](http://epicurrence.com/) early Sunday morning with anticipation and few expectations. I wasn't sure what I was in for over the next few days. I had hopes for new experiences (I hadn't skied since I was a kid, more to come on this), opportunities to meet some of my design heroes, and a desire to leave inspired to further my creative passions. Epicurrence fulfilled and exceeded those hopes.
 
-<p class="grid__half--right">I've attended a variety of conferences. SXSW, Brooklyn Beta, Circles Conference, SmashingConf, all of which have shaped and challenged me in individual ways. But recently I've grown a bit weary of the conference scene and I don't think I'm alone. It seems several of my peers want to attend events which spark conversation and community rather than the focus being on a continuous knowledge dump, which can become exhausting. The two years I attended Brooklyn Beta showed me an event which successfully blended environments of learning and community. I have fond memories of traveling to Brooklyn and spending several days in person with online friends as well as returning home refreshed to pick up my work with renewed enthusiasm and inspiration. When I saw the announcement for Epicurrence I saw potential for this to be a similar style conference, so I jumped at the chance to attend.</p>
+I've attended a variety of conferences. SXSW, Brooklyn Beta, Circles Conference, SmashingConf, all of which have shaped and challenged me in individual ways. But recently I've grown a bit weary of the conference scene and I don't think I'm alone. It seems several of my peers want to attend events which spark conversation and community rather than the focus being on a continuous knowledge dump, which can become exhausting. The two years I attended Brooklyn Beta showed me an event which successfully blended environments of learning and community. I have fond memories of traveling to Brooklyn and spending several days in person with online friends as well as returning home refreshed to pick up my work with renewed enthusiasm and inspiration. When I saw the announcement for Epicurrence I saw potential for this to be a similar style conference, so I jumped at the chance to attend.
 
 Since starting at <a href="http://pcpartpicker.com/">PCPartPicker</a> I've been working from home, which has been an immense blessing to me and my family (a post all about that is in the works). But like a lot of other people who work remotely you have lonely days. I'm the only designer on the team so I highly value opportunities to converse with other designers in person. I've known <a href="http://twitter.com/dannpetty">Dann Petty</a> for a few years now, but had yet to have a chance to meet him in person. I was looking forward to that opportunity. The speakers he lined up are easily some of the best in the business. I've met <a href="http://twitter.com/hemeon">Marc</a> a few times before and it's always a pleasure to spend time with that dude. His energy and pursuit in the game is infectious. <a href="http://twitter.com/yocline">Ben</a> is one of the co-founders of Rally Interactive which is one of today's hottest studios. I've wanted to meet him ever since I <a href="http://methodandcraft.com/interviews/ben-cline">interviewed him</a> awhile back on Method & Craft. <a href="http://twitter.com/schneidertobias">Tobias</a> can't help but create some of the most beautiful work I've ever seen. I resonate with his love for product design. <a href="http://twitter.com/joshhemsley">Josh</a> was scheduled to speak, but had to cancel at the last minute. It was a shame because he's incredibly talented and I would've loved to hear his perspective in the discussions we had. Thankfully a few audibles would called and other attendees were able to step up in his absence.    
 
