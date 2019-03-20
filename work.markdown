@@ -1,9 +1,8 @@
 ---
 title: Work
-date: 2019-01-14 21:23:00 -06:00
 permalink: "/work/"
-position: 2
 layout: page
+type: work
 ---
 
-Content coming soon...
+I'm still working on putting together my work examples. Until then you can browse my posts on [Dribbble](https://dribbble.com/philcoffman) and [Behance](https://www.behance.net/philcoffman) or do something else like go take a walk or treat yourself to some ice cream.

@@ -381,7 +381,24 @@ article {
   }
 }
 
+article.life {
+  .postHeader {
+    .postTitle {
+      a {
+        background-image: url("/assets/img/copied-3.jpg");
+      }
+    }
+  }
+}
+
 article.experiences {
+  .postHeader {
+    .postTitle {
+      a {
+        background-image: url("/assets/img/copied-4.jpg");
+      }
+    }
+  }
   figure {
     &:before {
       content: "";
@@ -458,7 +475,6 @@ article.note {
     color: $ink;
     font-size: 2rem;
     line-height: 1.125;
-    // -webkit-font-smoothing: auto;
     @media (min-width: $breakpoint-md) {
       width: 70vw;
       font-size: 2.5rem;
@@ -503,28 +519,6 @@ article.note {
         text-transform: capitalize;
         color: $neutral--dark;
       }
-    }
-  }
-}
-
-.post:nth-child(2) {
-  .postTitle {
-    a {
-      background-image: url("../assets/img/copied-2.jpg");
-    }
-  }
-}
-.post:nth-child(3) {
-  .postTitle {
-    a {
-      background-image: url("../assets/img/copied-3.jpg");
-    }
-  }
-}
-.post:nth-child(4) {
-  .postTitle {
-    a {
-      background-image: url("../assets/img/copied-4.jpg");
     }
   }
 }
@@ -603,6 +597,39 @@ section.about {
       text-decoration: none;
       &:hover {
         background: rgba(#ffc534, .7) url("../assets/img/wrinkle-2.png");
+      }
+    }
+  }
+}
+
+section.work {
+  width: 70vw;
+  margin: 0 auto;
+  @media (min-width: $breakpoint-md) {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  p {
+    font-family: $hand;
+    color: $ink;
+    font-size: 2rem;
+    line-height: 1.125;
+    @media (min-width: $breakpoint-md) {
+      font-size: 3rem;
+      line-height: 1.25;
+      text-align: justify;
+    }
+    a {
+      color: $ink;
+      position: relative;
+      background: transparent linear-gradient($ink 100%, transparent 100%);
+      background-position: left bottom 9px;
+      background-repeat: repeat-x;
+      background-size: 100% 2px;
+      text-shadow: 2px 2px $body-bg, 2px -2px $body-bg, -2px 2px $body-bg, -2px -2px $body-bg;
+      @media (min-width: $breakpoint-md) {
+        background-position: left bottom 14px;
       }
     }
   }
