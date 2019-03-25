@@ -15,7 +15,6 @@ baseurl: ''
 url: https://philcoffman.com
 twitter_username: philcoffman
 github_username: philcoffman
-# Google Analytics
 google_analytics: UA—7742329-1
 markdown: kramdown
 paginate: 5
