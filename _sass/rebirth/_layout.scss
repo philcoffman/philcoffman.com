@@ -326,19 +326,29 @@ article {
       }
     }
   }
-  .video__wrapper {
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    iframe {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
+  .video {
+    width: 86vw;
+    max-width: 1200px;
+    margin: 0 auto $space-2;
+    @media (min-width: $breakpoint-md) {
+      width: 72vw;
+      margin: 0 auto $space-4;
+    }
+    .video__wrapper {
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      iframe {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
+
   .postFooter {
     line-height: 1.125;
     p {
