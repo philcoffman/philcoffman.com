@@ -1,5 +1,5 @@
 ---
-title: Check-In
+title: Summer Update
 date: 2019-07-10T13:05:00.000+00:00
 tags: life
 layout: post
