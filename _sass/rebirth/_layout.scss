@@ -309,9 +309,10 @@ article {
   }
   ul.imageList {
     max-width: 1200px;
+    list-style: none;
     @media (min-width: $breakpoint-md) {
       display: grid;
-      grid-template-columns: repeat(auto-fit, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
       grid-gap: $space-2;
       width: 72vw;
     }
