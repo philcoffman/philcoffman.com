@@ -10,7 +10,7 @@ These weekly typographic poster exercises by [Xtian Miller](https://www.behance.
 
 ![](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0a518f71344587.5cf5dd3271954.jpg)
 
-These posters in particular are just so good! Xtian mentions in his Behance post that a shop is coming soon, so perhaps these will be available for sale in the future.
+These posters below in particular are some of my favorites. Xtian mentions in his Behance post that a shop is coming soon, so perhaps these will be available for sale in the future.
 
 <ul class="imageList">  
 <li><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/f3b44a71344587.5cf31c58b27fa.jpg"></li>
