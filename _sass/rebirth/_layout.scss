@@ -308,13 +308,14 @@ article {
     }
   }
   ul.imageList {
-    max-width: 1200px;
+    max-width: none;
     list-style: none;
+    padding-left: 0;
     @media (min-width: $breakpoint-md) {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
       grid-gap: $space-2;
-      width: 72vw;
+      width: 90vw;
     }
   }
   ol {
