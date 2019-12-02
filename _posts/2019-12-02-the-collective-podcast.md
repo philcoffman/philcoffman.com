@@ -13,7 +13,7 @@ One episode I recently finished and particularly resonated with me is the one he
 <div class="video full">  
 	<div class="video__wrapper">
   <iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/634412802&color=ff5500"></iframe>
-<div>
+	<div>
 </div>
 
 Earlier this year Victor released a short he art directed called "Rebirth", which was produced by [Quixel](https://quixel.com/ "Quixel") and showcases their products (particularly their [Megascans](https://quixel.com/megascans "Megascans") library) in a beautifully realized world powered by [Unreal Engine](https://www.unrealengine.com/en-US/ "Unreal Engine"). It's a jaw-dropping short. As a side note, Quixel was recently acquired by Epic and Unreal which is going to give more artists access to this level of realism, opening doors to a slew of new possibilities in their projects. I'm excited to see what comes from this.
