@@ -18,4 +18,5 @@ fields:
   name: type
   label: type
 pages:
+- _posts/the-collective-podcast.md
 - _posts/2019-09-05-posters-vol-i.md
