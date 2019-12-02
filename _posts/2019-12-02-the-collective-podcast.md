@@ -16,6 +16,6 @@ Earlier this year Victor released a short he art directed called "Rebirth", whic
 
 <div class="video full">  
 	<div class="video__wrapper">  
-		<iframe src="[https://www.youtube.com/embed/9fC20NWhx4s](https://www.youtube.com/embed/9fC20NWhx4s "https://www.youtube.com/embed/9fC20NWhx4s")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+		<iframe src="https://www.youtube.com/embed/9fC20NWhx4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 	</div>  
 </div>
