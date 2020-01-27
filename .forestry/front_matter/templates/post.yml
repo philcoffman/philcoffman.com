@@ -18,5 +18,6 @@ fields:
   name: type
   label: type
 pages:
-- _posts/2019-12-02-the-collective-podcast.md
 - _posts/2019-09-05-posters-vol-i.md
+- _posts/2019-12-02-the-collective-podcast.md
+- _posts/figma-config.md
